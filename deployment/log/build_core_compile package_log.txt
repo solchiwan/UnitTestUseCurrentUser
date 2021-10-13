@@ -1,0 +1,14 @@
+Buildfile: C:\Users\須原光秋\Documents\Mendix\UnitTestUseCurrentUser\deployment\build_core.xml
+
+compile:
+    [javac] Compiling 2 source files to C:\Users\須原光秋\Documents\Mendix\UnitTestUseCurrentUser\deployment\run\bin
+    [javac] 注意:C:\Users\須原光秋\Documents\Mendix\UnitTestUseCurrentUser\javasource\system\UserActionsRegistrar.javaは推奨されないAPIを使用またはオーバーライドしています。
+    [javac] 注意:詳細は、-Xlint:deprecationオプションを指定して再コンパイルしてください。
+
+package:
+      [jar] Building jar: C:\Users\須原光秋\Documents\Mendix\UnitTestUseCurrentUser\deployment\model\bundles\project.jar
+
+BUILD SUCCESSFUL
+Total time: 1 second
+
+

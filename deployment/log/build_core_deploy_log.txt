@@ -1,0 +1,11 @@
+Buildfile: C:\Users\須原光秋\Documents\Mendix\UnitTestUseCurrentUser\deployment\build_core.xml
+
+deploy:
+     [copy] Copying 41 files to C:\Users\須原光秋\Documents\Mendix\UnitTestUseCurrentUser\deployment
+     [copy] Copying 38 files to C:\Users\須原光秋\Documents\Mendix\UnitTestUseCurrentUser\deployment\model\lib\userlib
+     [copy] Copying 5 files to C:\Users\須原光秋\Documents\Mendix\UnitTestUseCurrentUser\deployment\model\resources
+
+BUILD SUCCESSFUL
+Total time: 0 seconds
+
+
