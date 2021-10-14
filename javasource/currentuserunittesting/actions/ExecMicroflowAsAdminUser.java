@@ -56,10 +56,16 @@ public class ExecMicroflowAsAdminUser extends CustomJavaAction<java.lang.Void>
 		try {
 			Core.microflowCall(microflow).execute(execContext);
 		} catch (Exception e) {
-			execContext.rollbackTransAction();
+			closeSessions(execContext, session);
 			throw e;
 		}
-		execContext.rollbackTransAction();
+		closeSessions(execContext, session);
+	}
+	
+	public void closeSessions(IContext context, ISession session)
+	{
+		context.rollbackTransAction();
+		Core.logout(session);
 	}
 	// END EXTRA CODE
 }

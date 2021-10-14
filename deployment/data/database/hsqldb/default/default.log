@@ -1,0 +1,932 @@
+/*C2*/SET SCHEMA PUBLIC
+DELETE FROM "mendixsystem$version" WHERE "versionnumber"='4.2'
+INSERT INTO "mendixsystem$version" VALUES('4.2','2021-10-13 22:37:13.772000','4.1.0','unversioned','UnitTestUseCurrentUser','9.3.0.22930')
+COMMIT
+/*C3*/SET SCHEMA PUBLIC
+DELETE FROM "mendixsystem$entityidentifier" WHERE "id"='d4154981-8dac-4150-aec5-efa3ef62a7a2'
+INSERT INTO "mendixsystem$entityidentifier" VALUES('d4154981-8dac-4150-aec5-efa3ef62a7a2',5,1101)
+COMMIT
+INSERT INTO "system$xasinstance" VALUES(1407374883554281,'f863d8ab-4c3f-465a-bc40-e55dc4d6cfe0','2021-10-14 10:52:13.118000','2021-10-14 10:52:13.126000',NULL,NULL,NULL)
+COMMIT
+DELETE FROM "system$userrole" WHERE "id"=4503599627370497
+INSERT INTO "system$userrole" VALUES(4503599627370497,'ea4a27c8-c3a3-4c46-bae0-5ef85074e759','','TestAdmin')
+DELETE FROM "system$userrole" WHERE "id"=4503599627370498
+INSERT INTO "system$userrole" VALUES(4503599627370498,'8dd52bfa-6d7e-453b-b506-303c0a3d9567','','Administrator')
+DELETE FROM "system$userrole" WHERE "id"=4503599627370499
+INSERT INTO "system$userrole" VALUES(4503599627370499,'53f5d6fa-6da9-4a71-b011-454ec052cce8','','User')
+COMMIT
+/*C2*/DELETE FROM "system$user" WHERE "id"=5348024557502465
+INSERT INTO "system$user" VALUES(5348024557502465,'2021-10-13 13:24:39.842000',TRUE,'2021-10-13 13:24:39.842000',NULL,FALSE,FALSE,0,FALSE,'demo_administrator','{BCrypt}$2a$10$MRKPuER42.OV8wGlGi5RWucHTlig.Rq5i.gKTBEPh5ZJlsg4nnOO2','Administration.Account',NULL,5348024557502465)
+COMMIT
+/*C3*/DELETE FROM "system$user" WHERE "id"=5348024557502466
+INSERT INTO "system$user" VALUES(5348024557502466,'2021-10-13 13:24:40.111000',TRUE,'2021-10-13 13:24:40.111000',NULL,FALSE,FALSE,0,FALSE,'demo_user','{BCrypt}$2a$10$XUt1PcET1j1sz5FA6/EeY.rTGOJX6dVaD0nrP6W37cs8DT9.9Efm6','Administration.Account',NULL,5348024557502466)
+COMMIT
+DELETE FROM "mendixsystem$properties" WHERE "key"='Mendix.Runtime.DeploymentID'
+INSERT INTO "mendixsystem$properties" VALUES('Mendix.Runtime.DeploymentID','637698379113619357')
+COMMIT
+DELETE FROM "system$session" WHERE "id"=11821949021848453
+DELETE FROM "system$session" WHERE "id"=11821949021848454
+DELETE FROM "system$session" WHERE "id"=11821949021848455
+DELETE FROM "system$session" WHERE "id"=11821949021848456
+DELETE FROM "system$session" WHERE "id"=11821949021848457
+DELETE FROM "system$session" WHERE "id"=11821949021848458
+DELETE FROM "system$session_user" WHERE "system$sessionid"=11821949021848453 AND "system$userid"=844424930131969
+DELETE FROM "system$session_user" WHERE "system$sessionid"=11821949021848454 AND "system$userid"=5348024557502467
+DELETE FROM "system$session_user" WHERE "system$sessionid"=11821949021848455 AND "system$userid"=5348024557502467
+DELETE FROM "system$session_user" WHERE "system$sessionid"=11821949021848456 AND "system$userid"=5348024557502467
+DELETE FROM "system$session_user" WHERE "system$sessionid"=11821949021848457 AND "system$userid"=5348024557502467
+DELETE FROM "system$session_user" WHERE "system$sessionid"=11821949021848458 AND "system$userid"=5348024557502467
+COMMIT
+/*C8*/SET SCHEMA PUBLIC
+DELETE FROM "system$user" WHERE "id"=844424930131969
+INSERT INTO "system$user" VALUES(844424930131969,'2021-10-13 13:24:41.935000',TRUE,'2021-10-13 13:24:41.935000','2021-10-14 10:42:11.710000',FALSE,FALSE,0,FALSE,'MxAdmin','{BCrypt}$2a$10$13EgPwIuD4eRNDo5dETj6OI4uFidoSJHMZH88UvIXPOKZySe3abYS','System.User',NULL,844424930131969)
+COMMIT
+DELETE FROM "system$xasinstance" WHERE "id"=1407374883554281
+INSERT INTO "system$xasinstance" VALUES(1407374883554281,'f863d8ab-4c3f-465a-bc40-e55dc4d6cfe0','2021-10-14 10:52:13.118000','2021-10-14 10:52:15.126000',NULL,NULL,NULL)
+COMMIT
+/*C7*/SET SCHEMA PUBLIC
+DELETE FROM "system$user" WHERE "id"=844424930131969
+INSERT INTO "system$user" VALUES(844424930131969,'2021-10-13 13:24:41.935000',TRUE,'2021-10-13 13:24:41.935000','2021-10-14 10:52:28.964000',FALSE,FALSE,0,FALSE,'MxAdmin','{BCrypt}$2a$10$13EgPwIuD4eRNDo5dETj6OI4uFidoSJHMZH88UvIXPOKZySe3abYS','System.User',NULL,844424930131969)
+COMMIT
+/*C8*/DELETE FROM "mendixsystem$entityidentifier" WHERE "id"='37f9fd49-5318-4c63-9a51-f761779b202f'
+INSERT INTO "mendixsystem$entityidentifier" VALUES('37f9fd49-5318-4c63-9a51-f761779b202f',42,1101)
+COMMIT
+INSERT INTO "system$session" VALUES(11821949021848553,NULL,'2a1a3e9c-991b-415e-b84a-a9ccb1b02b42','2021-10-14 10:52:29.011000','16aff34a-97b4-4520-b5c3-9d3e9b1531b6','2021-10-14 10:52:29.012000',FALSE,'e92b6fa2-24cc-41b2-92e9-8741c210449e')
+INSERT INTO "system$session_user" VALUES(11821949021848553,844424930131969)
+COMMIT
+DELETE FROM "system$session" WHERE "id"=11821949021848553
+INSERT INTO "system$session" VALUES(11821949021848553,NULL,'2a1a3e9c-991b-415e-b84a-a9ccb1b02b42','2021-10-14 10:52:29.011000','16aff34a-97b4-4520-b5c3-9d3e9b1531b6','2021-10-14 10:52:29.339000',FALSE,'e92b6fa2-24cc-41b2-92e9-8741c210449e')
+COMMIT
+DELETE FROM "mendixsystem$entityidentifier" WHERE "id"='8b3451db-e8fa-495e-ac96-92ef09260f5a'
+INSERT INTO "mendixsystem$entityidentifier" VALUES('8b3451db-e8fa-495e-ac96-92ef09260f5a',26,1001)
+COMMIT
+/*C7*/DELETE FROM "unittesting$unittest" WHERE "id"=9570149208162734
+DELETE FROM "unittesting$unittest" WHERE "id"=9570149208162735
+DELETE FROM "unittesting$unittest" WHERE "id"=9570149208162736
+DELETE FROM "unittesting$unittest" WHERE "id"=9570149208162737
+DELETE FROM "unittesting$unittest" WHERE "id"=9570149208162738
+DELETE FROM "unittesting$unittest" WHERE "id"=9570149208162739
+DELETE FROM "unittesting$unittest" WHERE "id"=9570149208162740
+DELETE FROM "unittesting$unittest" WHERE "id"=9570149208162741
+INSERT INTO "unittesting$unittest" VALUES(9570149208162734,TRUE,NULL,NULL,FALSE,'UnitTesting.Test_FailingUnitTest',NULL,NULL,NULL)
+DELETE FROM "unittesting$unittest_testsuite" WHERE "unittesting$unittestid"=9570149208162734 AND "unittesting$testsuiteid"=7318349394477470
+INSERT INTO "unittesting$unittest_testsuite" VALUES(9570149208162734,7318349394477470)
+INSERT INTO "unittesting$unittest" VALUES(9570149208162735,TRUE,NULL,NULL,FALSE,'UnitTesting.Test_IsAssertionErrorCheck',NULL,NULL,NULL)
+DELETE FROM "unittesting$unittest_testsuite" WHERE "unittesting$unittestid"=9570149208162735 AND "unittesting$testsuiteid"=7318349394477470
+INSERT INTO "unittesting$unittest_testsuite" VALUES(9570149208162735,7318349394477470)
+INSERT INTO "unittesting$unittest" VALUES(9570149208162736,TRUE,NULL,NULL,FALSE,'UnitTesting.Test_ValidUnitTest',NULL,NULL,NULL)
+DELETE FROM "unittesting$unittest_testsuite" WHERE "unittesting$unittestid"=9570149208162736 AND "unittesting$testsuiteid"=7318349394477470
+INSERT INTO "unittesting$unittest_testsuite" VALUES(9570149208162736,7318349394477470)
+INSERT INTO "unittesting$unittest" VALUES(9570149208162737,TRUE,NULL,NULL,FALSE,'UnitTesting.Test_WithoutReturn',NULL,NULL,NULL)
+DELETE FROM "unittesting$unittest_testsuite" WHERE "unittesting$unittestid"=9570149208162737 AND "unittesting$testsuiteid"=7318349394477470
+INSERT INTO "unittesting$unittest_testsuite" VALUES(9570149208162737,7318349394477470)
+INSERT INTO "unittesting$unittest" VALUES(9570149208162738,TRUE,NULL,NULL,FALSE,'UnitTesting.UT_ValidUnitTest',NULL,NULL,NULL)
+DELETE FROM "unittesting$unittest_testsuite" WHERE "unittesting$unittestid"=9570149208162738 AND "unittesting$testsuiteid"=7318349394477470
+INSERT INTO "unittesting$unittest_testsuite" VALUES(9570149208162738,7318349394477470)
+INSERT INTO "unittesting$unittest" VALUES(9570149208162739,FALSE,NULL,NULL,FALSE,'unittesting.UnittestingUnitTest1/testOfOneSecondSetupAndOneSecundRun',NULL,NULL,NULL)
+DELETE FROM "unittesting$unittest_testsuite" WHERE "unittesting$unittestid"=9570149208162739 AND "unittesting$testsuiteid"=7318349394477470
+INSERT INTO "unittesting$unittest_testsuite" VALUES(9570149208162739,7318349394477470)
+INSERT INTO "unittesting$unittest" VALUES(9570149208162740,FALSE,NULL,NULL,FALSE,'unittesting.UnittestingUnitTest1/testThatThrowsException',NULL,NULL,NULL)
+DELETE FROM "unittesting$unittest_testsuite" WHERE "unittesting$unittestid"=9570149208162740 AND "unittesting$testsuiteid"=7318349394477470
+INSERT INTO "unittesting$unittest_testsuite" VALUES(9570149208162740,7318349394477470)
+INSERT INTO "unittesting$unittest" VALUES(9570149208162741,FALSE,NULL,NULL,FALSE,'unittesting.UnittestingUnitTest2/evenMoreUnitTests',NULL,NULL,NULL)
+DELETE FROM "unittesting$unittest_testsuite" WHERE "unittesting$unittestid"=9570149208162741 AND "unittesting$testsuiteid"=7318349394477470
+INSERT INTO "unittesting$unittest_testsuite" VALUES(9570149208162741,7318349394477470)
+DELETE FROM "unittesting$testsuite" WHERE "id"=7318349394477470
+INSERT INTO "unittesting$testsuite" VALUES(7318349394477470,8,0,'Test_',0,TRUE,'UT_','UnitTesting',NULL,NULL)
+DELETE FROM "unittesting$unittest" WHERE "id"=9570149208163009
+INSERT INTO "unittesting$unittest" VALUES(9570149208163009,TRUE,'130 milliseconds','Exception: Failed to commit\u000d\u000a\u0009at SampleModule.Task_CurrentUser (CreateAndChange : ''Create Account(Name, Password)'')\u000d\u000a\u000d\u000aAdvanced stacktrace:\u000a\u000acom.mendix.modules.microflowengine.MicroflowException: Failed to commit\u000d\u000a\u0009at SampleModule.Task_CurrentUser (CreateAndChange : ''Create Account(Name, Password)'')\u000d\u000a\u000d\u000aAdvanced stacktrace:\u000d\u000a\u0009at com.mendix.modules.microflowengine.MicroflowUtil.processException(MicroflowUtil.java:85)\u000d\u000aCaused by: com.mendix.core.CoreRuntimeException: Failed to commit\u000d\u000a\u0009at com.mendix.basis.component.TransactionCore.commit(TransactionCore.scala:152)\u000d\u000aCaused by: com.mendix.core.CoreRuntimeException: com.mendix.systemwideinterfaces.MendixRuntimeException: com.mendix.core.CoreException: com.mendix.core.CoreRuntimeException: com.mendix.systemwideinterfaces.MendixRuntimeException: com.mendix.basis.util.license.LicenseRuntimeException: Maximum number of sessions exceeded! (You are currently using a trial license)\u000d\u000a\u0009at com.mendix.basis.actionmanagement.ActionManager.executeSync(ActionManager.scala:84)\u000d\u000aCaused by: com.mendix.systemwideinterfaces.MendixRuntimeException: com.mendix.core.CoreException: com.mendix.core.CoreRuntimeException: com.mendix.systemwideinterfaces.MendixRuntimeException: com.mendix.basis.util.license.LicenseRuntimeException: Maximum number of sessions exceeded! (You are currently using a trial license)\u000d\u000a\u0009at com.mendix.util.classloading.Runner.withContextClassLoader(Runner.java:23)\u000d\u000aCaused by: com.mendix.core.CoreException: com.mendix.core.CoreRuntimeException: com.mendix.systemwideinterfaces.MendixRuntimeException: com.mendix.basis.util.license.LicenseRuntimeException: Maximum number of sessions exceeded! (You are currently using a trial license)\u000d\u000a\u0009at com.mendix.basis.actionmanagement.SyncEventExtendedAction.executeAction(SyncEventExtendedAction.scala:31)\u000d\u000aCaused by: com.mendix.core.CoreRuntimeException: com.mendix.systemwideinterfaces.MendixRuntimeException: com.mendix.basis.util.license.LicenseRuntimeException: Maximum number of sessions exceeded! (You are currently using a trial license)\u000d\u000a\u0009at com.mendix.basis.actionmanagement.ActionManager.executeSync(ActionManager.scala:84)\u000d\u000aCaused by: com.mendix.systemwideinterfaces.MendixRuntimeException: com.mendix.basis.util.license.LicenseRuntimeException: Maximum number of sessions exceeded! (You are currently using a trial license)\u000d\u000a\u0009at com.mendix.util.classloading.Runner.withContextClassLoader(Runner.java:23)\u000d\u000aCaused by: com.mendix.basis.util.license.LicenseRuntimeException: Maximum number of sessions exceeded! (You are currently using a trial license)\u000d\u000a\u0009at com.mendix.basis.util.license.LicenseUtil.checkTrialLimitation(LicenseUtil.scala:48)\u000d\u000a\u0009at com.mendix.basis.util.license.LicenseUtil.checkUserLimitations(LicenseUtil.scala:27)\u000d\u000a\u0009at com.mendix.basis.util.license.LicenseUtil.checkUserLimitations(LicenseUtil.scala:124)\u000d\u000a\u0009at com.mendix.basis.action.user.CommitAction.checkUserLimitations(CommitAction.scala:75)\u000d\u000a\u0009at com.mendix.basis.action.user.CommitAction.executeAction(CommitAction.scala:59)\u000d\u000a\u0009at com.mendix.basis.action.user.CommitAction.executeAction(CommitAction.scala:31)\u000d\u000a\u0009at com.mendix.systemwideinterfaces.core.UserAction.execute(UserAction.java:46)\u000d\u000a\u0009at com.mendix.basis.actionmanagement.CoreActionHandlerImpl.doCall(CoreActionHandlerImpl.scala:71)\u000d\u000a\u0009at com.mendix.basis.actionmanagement.CoreActionHandlerImpl.call(CoreActionHandlerImpl.scala:48)\u000d\u000a\u0009at com.mendix.core.actionmanagement.internal.InternalCoreAction.call(InternalCoreAction.scala:25)\u000d\u000a\u0009at com.mendix.basis.actionmanagement.ActionManager.$anonfun$executeSync$2(ActionManager.scala:80)\u000d\u000a\u0009at com.mendix.util.classloading.Runner.withContextClassLoader(Runner.java:19)\u000d\u000a\u0009at com.mendix.basis.actionmanagement.ActionManager.executeSync(ActionManager.scala:79)\u000d\u000a\u0009at com.mendix.basis.actionmanagement.SyncEventExtendedAction.executeAction(SyncEventExtendedAction.scala:28)\u000d\u000a\u0009at com.mendix.basis.actionmanagement.EventExtendedAction.execute(EventExtendedAction.java:94)\u000d\u000a\u0009at com.mendix.basis.actionmanagement.CoreActionHandlerImpl.doCall(CoreActionHandlerImpl.scala:71)\u000d\u000a\u0009at com.mendix.basis.actionmanagement.CoreActionHandlerImpl.call(CoreActionHandlerImpl.scala:48)\u000d\u000a\u0009at com.mendix.core.actionmanagement.internal.InternalCoreAction.call(InternalCoreAction.scala:25)\u000d\u000a\u0009at com.mendix.basis.actionmanagement.ActionManager.$anonfun$executeSync$2(ActionManager.scala:81)\u000d\u000a\u0009at com.mendix.util.classloading.Runner.withContextClassLoader(Runner.java:19)\u000d\u000a\u0009at com.mendix.basis.actionmanagement.ActionManager.executeSync(ActionManager.scala:79)\u000d\u000a\u0009at com.mendix.basis.actionmanagement.ActionManager.$anonfun$executeInTransactionSync$1(ActionManager.scala:91)\u000d\u000a\u0009at scala.util.Try$.apply(Try.scala:210)\u000d\u000a\u0009at com.mendix.basis.actionmanagement.ActionManager.executeInTransactionSync(ActionManager.scala:91)\u000d\u000a\u0009at com.mendix.basis.component.TransactionCore.$anonfun$storeObjectsAndAutoCommittedObjects$1(TransactionCore.scala:190)\u000d\u000a\u0009at scala.collection.immutable.List.map(List.scala:246)\u000d\u000a\u0009at scala.collection.immutable.List.map(List.scala:79)\u000d\u000a\u0009at com.mendix.basis.component.TransactionCore.storeObjectsAndAutoCommittedObjects(TransactionCore.scala:188)\u000d\u000a\u0009at com.mendix.basis.component.TransactionCore.commit(TransactionCore.scala:126)\u000d\u000a\u0009at com.mendix.basis.component.TransactionCore.commit$(TransactionCore.scala:109)\u000d\u000a\u0009at com.mendix.basis.component.InternalCore.commit(InternalCore.scala:21)\u000d\u000a\u0009at com.mendix.basis.component.TransactionCore.commitWithEvents(TransactionCore.scala:69)\u000d\u000a\u0009at com.mendix.basis.component.TransactionCore.commit(TransactionCore.scala:28)\u000d\u000a\u0009at com.mendix.basis.component.TransactionCore.commit$(TransactionCore.scala:27)\u000d\u000a\u0009at com.mendix.basis.component.InternalCore.commit(InternalCore.scala:21)\u000d\u000a\u0009at com.mendix.basis.component.TransactionCore.commit(TransactionCore.scala:23)\u000d\u000a\u0009at com.mendix.basis.component.TransactionCore.commit$(TransactionCore.scala:23)\u000d\u000a\u0009at com.mendix.basis.component.InternalCore.commit(InternalCore.scala:21)\u000d\u000a\u0009at com.mendix.modules.microflowengine.actions.mxobject.ChangeItemsExecutor.executeChanges(ChangeItemsExecutor.scala:34)\u000d\u000a\u0009at com.mendix.modules.microflowengine.actions.mxobject.ChangeItemsExecutor.executeChanges$(ChangeItemsExecutor.scala:20)\u000d\u000a\u0009at com.mendix.modules.microflowengine.actions.mxobject.ChangeAction.executeChanges(ChangeAction.scala:12)\u000d\u000a\u0009at com.mendix.modules.microflowengine.actions.mxobject.CreateChangeAction$$anonfun$1.applyOrElse(CreateChangeAction.scala:26)\u000d\u000a\u0009at com.mendix.modules.microflowengine.actions.mxobject.CreateChangeAction$$anonfun$1.applyOrElse(CreateChangeAction.scala:24)\u000d\u000a\u0009at scala.PartialFunction$Lifted.apply(PartialFunction.scala:313)\u000d\u000a\u0009at scala.PartialFunction$Lifted.apply(PartialFunction.scala:309)\u000d\u000a\u0009at scala.Option.collect(Option.scala:462)\u000d\u000a\u0009at com.mendix.modules.microflowengine.actions.mxobject.CreateChangeAction.execute(CreateChangeAction.scala:24)\u000d\u000a\u0009at com.mendix.modules.microflowengine.actions.mxobject.CreateChangeAction.execute(CreateChangeAction.scala:12)\u000d\u000a\u0009at com.mendix.modules.microflowengine.microflow.impl.MicroflowObject.$anonfun$execute$1(MicroflowObject.scala:31)\u000d\u000a\u0009at scala.Option.flatMap(Option.scala:283)\u000d\u000a\u0009at com.mendix.modules.microflowengine.microflow.impl.MicroflowObject.execute(MicroflowObject.scala:28)\u000d\u000a\u0009at com.mendix.modules.microflowengine.microflow.impl.MicroflowImpl.$anonfun$executeAfterBreakingIfNecessary$2(MicroflowImpl.scala:167)\u000d\u000a\u0009at scala.Option.flatMap(Option.scala:283)\u000d\u000a\u0009at com.mendix.modules.microflowengine.microflow.impl.MicroflowImpl.executeAfterBreakingIfNecessary(MicroflowImpl.scala:167)\u000d\u000a\u0009at com.mendix.modules.microflowengine.microflow.impl.MicroflowImpl.executeAction(MicroflowImpl.scala:114)\u000d\u000a\u0009at com.mendix.systemwideinterfaces.core.UserAction.execute(UserAction.java:46)\u000d\u000a\u0009at com.mendix.basis.actionmanagement.CoreActionHandlerImpl.doCall(CoreActionHandlerImpl.scala:71)\u000d\u000a\u0009at com.mendix.basis.actionmanagement.CoreActionHandlerImpl.call(CoreActionHandlerImpl.scala:48)\u000d\u000a\u0009at com.mendix.core.actionmanagement.internal.InternalCoreAction.call(InternalCoreAction.scala:25)\u000d\u000a\u0009at com.mendix.basis.actionmanagement.CoreActionHandlerImpl.$anonfun$runMonitoredAction$1(CoreActionHandlerImpl.scala:59)\u000d\u000a\u0009at com.mendix.basis.actionmanagement.ActionMonitoring$.$anonfun$monitor$1(ActionMonitoring.scala:50)\u000d\u000a\u0009at com.mendix.util.classloading.Runner.withContextClassLoader(Runner.java:19)\u000d\u000a\u0009at com.mendix.basis.actionmanagement.ActionMonitoring$.monitor(ActionMonitoring.scala:50)\u000d\u000a\u0009at com.mendix.basis.actionmanagement.CoreActionHandlerImpl.runMonitoredAction(CoreActionHandlerImpl.scala:59)\u000d\u000a\u0009at com.mendix.basis.actionmanagement.CoreActionHandlerImpl.call(CoreActionHandlerImpl.scala:46)\u000d\u000a\u0009at com.mendix.core.actionmanagement.internal.InternalCoreAction.call(InternalCoreAction.scala:25)\u000d\u000a\u0009at com.mendix.basis.actionmanagement.ActionManager.$anonfun$executeSync$2(ActionManager.scala:80)\u000d\u000a\u0009at com.mendix.util.classloading.Runner.withContextClassLoader(Runner.java:19)\u000d\u000a\u0009at com.mendix.basis.actionmanagement.ActionManager.executeSync(ActionManager.scala:79)\u000d\u000a\u0009at com.mendix.basis.actionmanagement.MicroflowCallBuilderImpl.execute(MicroflowCallBuilderImpl.scala:41)\u000d\u000a\u0009at currentuserunittesting.actions.ExecMicroflowAsAdminUser.execMicroflow(ExecMicroflowAsAdminUser.java:59)\u000d\u000a\u0009at currentuserunittesting.actions.ExecMicroflowAsAdminUser.executeAction(ExecMicroflowAsAdminUser.java:35)\u000d\u000a\u0009at currentuserunittesting.actions.ExecMicroflowAsAdminUser.executeAction(ExecMicroflowAsAdminUser.java:18)\u000d\u000a\u0009at com.mendix.systemwideinterfaces.core.UserAction.execute(UserAction.java:46)\u000d\u000a\u0009at com.mendix.basis.actionmanagement.CoreActionHandlerImpl.doCall(CoreActionHandlerImpl.scala:71)\u000d\u000a\u0009at com.mendix.basis.actionmanagement.CoreActionHandlerImpl.call(CoreActionHandlerImpl.scala:48)\u000d\u000a\u0009at com.mendix.core.actionmanagement.internal.InternalCoreAction.call(InternalCoreAction.scala:25)\u000d\u000a\u0009at com.mendix.basis.actionmanagement.ActionManager.$anonfun$executeSync$2(ActionManager.scala:80)\u000d\u000a\u0009at com.mendix.util.classloading.Runner.withContextClassLoader(Runner.java:19)\u000d\u000a\u0009at com.mendix.basis.actionmanagement.ActionManager.executeSync(ActionManager.scala:79)\u000d\u000a\u0009at com.mendix.basis.actionmanagement.UserActionCallBuilderImpl.execute(UserActionCallBuilderImpl.scala:35)\u000d\u000a\u0009at com.mendix.modules.microflowengine.actions.actioncall.ForegroundJavaAction.doExecute(ForegroundJavaAction.scala:35)\u000d\u000a\u0009at com.mendix.modules.microflowengine.actions.actioncall.ForegroundJavaAction.doExecute(ForegroundJavaAction.scala:11)\u000d\u000a\u0009at com.mendix.modules.microflowengine.actions.actioncall.JavaAction.execute(JavaAction.scala:38)\u000d\u000a\u0009at com.mendix.modules.microflowengine.microflow.impl.MicroflowObject.$anonfun$execute$1(MicroflowObject.scala:31)\u000d\u000a\u0009at scala.Option.flatMap(Option.scala:283)\u000d\u000a\u0009at com.mendix.modules.microflowengine.microflow.impl.MicroflowObject.execute(MicroflowObject.scala:28)\u000d\u000a\u0009at com.mendix.modules.microflowengine.microflow.impl.MicroflowImpl.$anonfun$executeAfterBreakingIfNecessary$2(MicroflowImpl.scala:167)\u000d\u000a\u0009at scala.Option.flatMap(Option.scala:283)\u000d\u000a\u0009at com.mendix.modules.microflowengine.microflow.impl.MicroflowImpl.executeAfterBreakingIfNecessary(MicroflowImpl.scala:167)\u000d\u000a\u0009at com.mendix.modules.microflowengine.microflow.impl.MicroflowImpl.executeAction(MicroflowImpl.scala:114)\u000d\u000a\u0009at com.mendix.systemwideinterfaces.core.UserAction.execute(UserAction.java:46)\u000d\u000a\u0009at com.mendix.basis.actionmanagement.CoreActionHandlerImpl.doCall(CoreActionHandlerImpl.scala:71)\u000d\u000a\u0009at com.mendix.basis.actionmanagement.CoreActionHandlerImpl.call(CoreActionHandlerImpl.scala:48)\u000d\u000a\u0009at com.mendix.core.actionmanagement.internal.InternalCoreAction.call(InternalCoreAction.scala:25)\u000d\u000a\u0009at com.mendix.basis.actionmanagement.CoreActionHandlerImpl.$anonfun$runMonitoredAction$1(CoreActionHandlerImpl.scala:59)\u000d\u000a\u0009at com.mendix.basis.actionmanagement.ActionMonitoring$.$anonfun$monitor$1(ActionMonitoring.scala:50)\u000d\u000a\u0009at com.mendix.util.classloading.Runner.withContextClassLoader(Runner.java:19)\u000d\u000a\u0009at com.mendix.basis.actionmanagement.ActionMonitoring$.monitor(ActionMonitoring.scala:50)\u000d\u000a\u0009at com.mendix.basis.actionmanagement.CoreActionHandlerImpl.runMonitoredAction(CoreActionHandlerImpl.scala:59)\u000d\u000a\u0009at com.mendix.basis.actionmanagement.CoreActionHandlerImpl.call(CoreActionHandlerImpl.scala:46)\u000d\u000a\u0009at com.mendix.core.actionmanagement.internal.InternalCoreAction.call(InternalCoreAction.scala:25)\u000d\u000a\u0009at com.mendix.basis.actionmanagement.ActionManager.$anonfun$executeSync$2(ActionManager.scala:80)\u000d\u000a\u0009at com.mendix.util.classloading.Runner.withContextClassLoader(Runner.java:19)\u000d\u000a\u0009at com.mendix.basis.actionmanagement.ActionManager.executeSync(ActionManager.scala:79)\u000d\u000a\u0009at com.mendix.basis.actionmanagement.MicroflowCallBuilderImpl.execute(MicroflowCallBuilderImpl.scala:41)\u000d\u000a\u0009at unittesting.TestManager.runMicroflowTest(TestManager.java:360)\u000d\u000a\u0009at unittesting.TestManager.runMicroflowTest(TestManager.java:312)\u000d\u000a\u0009at unittesting.TestManager.runTest(TestManager.java:105)\u000d\u000a\u0009at unittesting.actions.RunUnitTest.executeAction(RunUnitTest.java:34)\u000d\u000a\u0009at unittesting.actions.RunUnitTest.executeAction(RunUnitTest.java:17)\u000d\u000a\u0009at com.mendix.systemwideinterfaces.core.UserAction.execute(UserAction.java:46)\u000d\u000a\u0009at com.mendix.basis.actionmanagement.CoreActionHandlerImpl.doCall(CoreActionHandlerImpl.scala:71)\u000d\u000a\u0009at com.mendix.basis.actionmanagement.CoreActionHandlerImpl.call(CoreActionHandlerImpl.scala:48)\u000d\u000a\u0009at com.mendix.core.actionmanagement.internal.InternalCoreAction.call(InternalCoreAction.scala:25)\u000d\u000a\u0009at com.mendix.basis.actionmanagement.ActionManager.$anonfun$executeSync$2(ActionManager.scala:80)\u000d\u000a\u0009at com.mendix.util.classloading.Runner.withContextClassLoader(Runner.java:19)\u000d\u000a\u0009at com.mendix.basis.actionmanagement.ActionManager.executeSync(ActionManager.scala:79)\u000d\u000a\u0009at com.mendix.basis.actionmanagement.UserActionCallBuilderImpl.execute(UserActionCallBuilderImpl.scala:35)\u000d\u000a\u0009at com.mendix.modules.microflowengine.actions.actioncall.ForegroundJavaAction.doExecute(ForegroundJavaAction.scala:35)\u000d\u000a\u0009at com.mendix.modules.microflowengine.actions.actioncall.ForegroundJavaAction.doExecute(ForegroundJavaAction.scala:11)\u000d\u000a\u0009at com.mendix.modules.microflowengine.actions.actioncall.JavaAction.execute(JavaAction.scala:38)\u000d\u000a\u0009at com.mendix.modules.microflowengine.microflow.impl.MicroflowObject.$anonfun$execute$1(MicroflowObject.scala:31)\u000d\u000a\u0009at scala.Option.flatMap(Option.scala:283)\u000d\u000a\u0009at com.mendix.modules.microflowengine.microflow.impl.MicroflowObject.execute(MicroflowObject.scala:28)\u000d\u000a\u0009at com.mendix.modules.microflowengine.microflow.impl.MicroflowImpl.$anonfun$executeAfterBreakingIfNecessary$2(MicroflowImpl.scala:167)\u000d\u000a\u0009at scala.Option.flatMap(Option.scala:283)\u000d\u000a\u0009at com.mendix.modules.microflowengine.microflow.impl.MicroflowImpl.executeAfterBreakingIfNecessary(MicroflowImpl.scala:167)\u000d\u000a\u0009at com.mendix.modules.microflowengine.microflow.impl.MicroflowImpl.executeAction(MicroflowImpl.scala:114)\u000d\u000a\u0009at com.mendix.systemwideinterfaces.core.UserAction.execute(UserAction.java:46)\u000d\u000a\u0009at com.mendix.basis.actionmanagement.CoreActionHandlerImpl.doCall(CoreActionHandlerImpl.scala:71)\u000d\u000a\u0009at com.mendix.basis.actionmanagement.CoreActionHandlerImpl.call(CoreActionHandlerImpl.scala:48)\u000d\u000a\u0009at com.mendix.core.actionmanagement.internal.InternalCoreAction.call(InternalCoreAction.scala:25)\u000d\u000a\u0009at com.mendix.basis.actionmanagement.CoreActionHandlerImpl.$anonfun$runMonitoredAction$1(CoreActionHandlerImpl.scala:59)\u000d\u000a\u0009at com.mendix.basis.actionmanagement.ActionMonitoring$.$anonfun$monitor$1(ActionMonitoring.scala:50)\u000d\u000a\u0009at com.mendix.util.classloading.Runner.withContextClassLoader(Runner.java:19)\u000d\u000a\u0009at com.mendix.basis.actionmanagement.ActionMonitoring$.monitor(ActionMonitoring.scala:50)\u000d\u000a\u0009at com.mendix.basis.actionmanagement.CoreActionHandlerImpl.runMonitoredAction(CoreActionHandlerImpl.scala:59)\u000d\u000a\u0009at com.mendix.basis.actionmanagement.CoreActionHandlerImpl.call(CoreActionHandlerImpl.scala:46)\u000d\u000a\u0009at com.mendix.core.actionmanagement.internal.InternalCoreAction.call(InternalCoreAction.scala:25)\u000d\u000a\u0009at com.mendix.basis.actionmanagement.ActionManager.$anonfun$executeAsync$3(ActionManager.scala:64)\u000d\u000a\u0009at scala.concurrent.Future$.$anonfun$apply$1(Future.scala:672)\u000d\u000a\u0009at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:431)\u000d\u000a\u0009at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)\u000d\u000a\u0009at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)\u000d\u000a\u0009at java.base/java.lang.Thread.run(Thread.java:834)\u000d\u000a',FALSE,'SampleModule.Test_CurrentUser','_2_Failed','Starting microflow test ''SampleModule.Test_CurrentUser''','2021-10-14 10:42:31.344000')
+DELETE FROM "unittesting$unittest_testsuite" WHERE "unittesting$unittestid"=9570149208163009 AND "unittesting$testsuiteid"=7318349394477878
+INSERT INTO "unittesting$unittest_testsuite" VALUES(9570149208163009,7318349394477878)
+DELETE FROM "unittesting$testsuite" WHERE "id"=7318349394477878
+INSERT INTO "unittesting$testsuite" VALUES(7318349394477878,1,0,'Test_',0,TRUE,'UT_','SampleModule',NULL,NULL)
+COMMIT
+DELETE FROM "mendixsystem$entityidentifier" WHERE "id"='eb7e1a76-8695-443f-b673-e96a9f50aa11'
+INSERT INTO "mendixsystem$entityidentifier" VALUES('eb7e1a76-8695-443f-b673-e96a9f50aa11',34,901)
+COMMIT
+/*C8*/DELETE FROM "unittesting$unittest" WHERE "id"=9570149208163009
+DELETE FROM "unittesting$unittest_testsuite" WHERE "unittesting$unittestid"=9570149208163009 AND "unittesting$testsuiteid"=7318349394477878
+DELETE FROM "unittesting$testsuite" WHERE "id"=7318349394477878
+DELETE FROM "unittesting$unittest" WHERE "id"=9570149208162734
+DELETE FROM "unittesting$unittest" WHERE "id"=9570149208162735
+DELETE FROM "unittesting$unittest" WHERE "id"=9570149208162736
+DELETE FROM "unittesting$unittest" WHERE "id"=9570149208162737
+DELETE FROM "unittesting$unittest" WHERE "id"=9570149208162738
+DELETE FROM "unittesting$unittest" WHERE "id"=9570149208162739
+DELETE FROM "unittesting$unittest" WHERE "id"=9570149208162740
+DELETE FROM "unittesting$unittest" WHERE "id"=9570149208162741
+INSERT INTO "unittesting$unittest" VALUES(9570149208162734,TRUE,NULL,NULL,FALSE,'UnitTesting.Test_FailingUnitTest',NULL,NULL,NULL)
+DELETE FROM "unittesting$unittest_testsuite" WHERE "unittesting$unittestid"=9570149208162734 AND "unittesting$testsuiteid"=7318349394477470
+INSERT INTO "unittesting$unittest_testsuite" VALUES(9570149208162734,7318349394477470)
+INSERT INTO "unittesting$unittest" VALUES(9570149208162735,TRUE,NULL,NULL,FALSE,'UnitTesting.Test_IsAssertionErrorCheck',NULL,NULL,NULL)
+DELETE FROM "unittesting$unittest_testsuite" WHERE "unittesting$unittestid"=9570149208162735 AND "unittesting$testsuiteid"=7318349394477470
+INSERT INTO "unittesting$unittest_testsuite" VALUES(9570149208162735,7318349394477470)
+INSERT INTO "unittesting$unittest" VALUES(9570149208162736,TRUE,NULL,NULL,FALSE,'UnitTesting.Test_ValidUnitTest',NULL,NULL,NULL)
+DELETE FROM "unittesting$unittest_testsuite" WHERE "unittesting$unittestid"=9570149208162736 AND "unittesting$testsuiteid"=7318349394477470
+INSERT INTO "unittesting$unittest_testsuite" VALUES(9570149208162736,7318349394477470)
+INSERT INTO "unittesting$unittest" VALUES(9570149208162737,TRUE,NULL,NULL,FALSE,'UnitTesting.Test_WithoutReturn',NULL,NULL,NULL)
+DELETE FROM "unittesting$unittest_testsuite" WHERE "unittesting$unittestid"=9570149208162737 AND "unittesting$testsuiteid"=7318349394477470
+INSERT INTO "unittesting$unittest_testsuite" VALUES(9570149208162737,7318349394477470)
+INSERT INTO "unittesting$unittest" VALUES(9570149208162738,TRUE,NULL,NULL,FALSE,'UnitTesting.UT_ValidUnitTest',NULL,NULL,NULL)
+DELETE FROM "unittesting$unittest_testsuite" WHERE "unittesting$unittestid"=9570149208162738 AND "unittesting$testsuiteid"=7318349394477470
+INSERT INTO "unittesting$unittest_testsuite" VALUES(9570149208162738,7318349394477470)
+INSERT INTO "unittesting$unittest" VALUES(9570149208162739,FALSE,NULL,NULL,FALSE,'unittesting.UnittestingUnitTest1/testOfOneSecondSetupAndOneSecundRun',NULL,NULL,NULL)
+DELETE FROM "unittesting$unittest_testsuite" WHERE "unittesting$unittestid"=9570149208162739 AND "unittesting$testsuiteid"=7318349394477470
+INSERT INTO "unittesting$unittest_testsuite" VALUES(9570149208162739,7318349394477470)
+INSERT INTO "unittesting$unittest" VALUES(9570149208162740,FALSE,NULL,NULL,FALSE,'unittesting.UnittestingUnitTest1/testThatThrowsException',NULL,NULL,NULL)
+DELETE FROM "unittesting$unittest_testsuite" WHERE "unittesting$unittestid"=9570149208162740 AND "unittesting$testsuiteid"=7318349394477470
+INSERT INTO "unittesting$unittest_testsuite" VALUES(9570149208162740,7318349394477470)
+INSERT INTO "unittesting$unittest" VALUES(9570149208162741,FALSE,NULL,NULL,FALSE,'unittesting.UnittestingUnitTest2/evenMoreUnitTests',NULL,NULL,NULL)
+DELETE FROM "unittesting$unittest_testsuite" WHERE "unittesting$unittestid"=9570149208162741 AND "unittesting$testsuiteid"=7318349394477470
+INSERT INTO "unittesting$unittest_testsuite" VALUES(9570149208162741,7318349394477470)
+DELETE FROM "unittesting$testsuite" WHERE "id"=7318349394477470
+INSERT INTO "unittesting$testsuite" VALUES(7318349394477470,8,0,'Test_',0,TRUE,'UT_','UnitTesting',NULL,NULL)
+INSERT INTO "unittesting$unittest" VALUES(9570149208163105,TRUE,NULL,NULL,FALSE,'SampleModule.Test_CurrentUser',NULL,NULL,NULL)
+INSERT INTO "unittesting$unittest_testsuite" VALUES(9570149208163105,7318349394477962)
+INSERT INTO "unittesting$testsuite" VALUES(7318349394477962,1,0,'Test_',0,TRUE,'UT_','SampleModule',NULL,NULL)
+COMMIT
+/*C7*/DELETE FROM "mendixsystem$entityidentifier" WHERE "id"='660db38b-5ab4-4d15-b649-93a947ecea82'
+INSERT INTO "mendixsystem$entityidentifier" VALUES('660db38b-5ab4-4d15-b649-93a947ecea82',30,1001)
+COMMIT
+INSERT INTO "system$backgroundjob" VALUES(8444249301320581,NULL,'2021-10-14 10:52:35.124000',FALSE,1634208749236,NULL)
+INSERT INTO "system$backgroundjob_session" VALUES(8444249301320581,11821949021848553)
+COMMIT
+/*C2*/INSERT INTO "system$session" VALUES(11821949021848554,NULL,'d2735b34-6681-453b-a212-4dfba6e8e0b0','2021-10-14 10:52:35.168000','0978b11d-ebbe-4034-9f41-e2833c3b08b3','2021-10-14 10:52:35.168000',FALSE,'a0d89dbd-07bf-4361-8cab-9e5123bb008d')
+INSERT INTO "system$session_user" VALUES(11821949021848554,5348024557502467)
+COMMIT
+/*C9*/SET SCHEMA PUBLIC
+DELETE FROM "mendixsystem$entityidentifier" WHERE "id"='3078a23e-13b2-4a9b-84e4-2881fdee53c6'
+INSERT INTO "mendixsystem$entityidentifier" VALUES('3078a23e-13b2-4a9b-84e4-2881fdee53c6',19,1101)
+COMMIT
+DELETE FROM "mendixsystem$entityidentifier" WHERE "id"='fc4f25aa-928b-4b8c-8f23-d47697dff2cc'
+INSERT INTO "mendixsystem$entityidentifier" VALUES('fc4f25aa-928b-4b8c-8f23-d47697dff2cc',49,1001)
+COMMIT
+DELETE FROM "mendixsystem$entityidentifier" WHERE "id"='2270f3f5-c2a4-468f-a73e-eae9a6fec3bb'
+INSERT INTO "mendixsystem$entityidentifier" VALUES('2270f3f5-c2a4-468f-a73e-eae9a6fec3bb',50,1001)
+COMMIT
+/*C2*/DELETE FROM "system$session" WHERE "id"=11821949021848554
+DELETE FROM "system$session_user" WHERE "system$sessionid"=11821949021848554 AND "system$userid"=5348024557502467
+COMMIT
+/*C8*/DELETE FROM "unittesting$unittest" WHERE "id"=9570149208163105
+INSERT INTO "unittesting$unittest" VALUES(9570149208163105,TRUE,'339 milliseconds','Microflow completed successfully',FALSE,'SampleModule.Test_CurrentUser','_3_Success','Starting microflow test ''SampleModule.Test_CurrentUser''','2021-10-14 10:52:35.128000')
+COMMIT
+DELETE FROM "system$backgroundjob" WHERE "id"=8444249301320581
+INSERT INTO "system$backgroundjob" VALUES(8444249301320581,'2021-10-14 10:52:35.501000','2021-10-14 10:52:35.124000',FALSE,1634208749236,'{"body":{"changes":{},"commits":["9570149208163105"],"committedObjectsOmitted":false,"deletes":[],"instructions":[{"args":{"classnames":["UnitTesting.UnitTest"]},"target":"system","type":"refresh_class"},{"args":{"ObjectIds":["9570149208163105"]},"target":"system","type":"refresh_object_list"}],"newpersistable":[],"objects":[{"attributes":{"Name":{"value":"SampleModule.Test_CurrentUser","readonly":true},"UnitTesting.UnitTest_TestSuite":{"value":"7318349394477962","readonly":true},"LastStep":{"value":"Starting microflow test ''SampleModule.Test_CurrentUser''","readonly":true},"ReadableTime":{"value":"339 milliseconds","readonly":true},"LastRun":{"value":1634208755128,"readonly":true},"_dirty":{"value":false,"readonly":true},"Result":{"value":"_3_Success","readonly":true},"ResultMessage":{"value":"Microflow completed successfully","readonly":true},"IsMf":{"value":true,"readonly":true}},"guid":"9570149208163105","hash":"41M/AfnNmE84PlxPNA8/wM2jA5U+XhISrPnR/bNJFFM=","objectType":"UnitTesting.UnitTest"}],"resets":{}},"status":200}')
+COMMIT
+/*C7*/DELETE FROM "system$backgroundjob" WHERE "id"=8444249301320581
+DELETE FROM "system$backgroundjob_session" WHERE "system$backgroundjobid"=8444249301320581 AND "system$sessionid"=11821949021848553
+COMMIT
+/*C2*/DELETE FROM "unittesting$unittest" WHERE "id"=9570149208163105
+DELETE FROM "unittesting$unittest_testsuite" WHERE "unittesting$unittestid"=9570149208163105 AND "unittesting$testsuiteid"=7318349394477962
+DELETE FROM "unittesting$testsuite" WHERE "id"=7318349394477962
+DELETE FROM "unittesting$unittest" WHERE "id"=9570149208162734
+DELETE FROM "unittesting$unittest" WHERE "id"=9570149208162735
+DELETE FROM "unittesting$unittest" WHERE "id"=9570149208162736
+DELETE FROM "unittesting$unittest" WHERE "id"=9570149208162737
+DELETE FROM "unittesting$unittest" WHERE "id"=9570149208162738
+DELETE FROM "unittesting$unittest" WHERE "id"=9570149208162739
+DELETE FROM "unittesting$unittest" WHERE "id"=9570149208162740
+DELETE FROM "unittesting$unittest" WHERE "id"=9570149208162741
+INSERT INTO "unittesting$unittest" VALUES(9570149208162734,TRUE,NULL,NULL,FALSE,'UnitTesting.Test_FailingUnitTest',NULL,NULL,NULL)
+DELETE FROM "unittesting$unittest_testsuite" WHERE "unittesting$unittestid"=9570149208162734 AND "unittesting$testsuiteid"=7318349394477470
+INSERT INTO "unittesting$unittest_testsuite" VALUES(9570149208162734,7318349394477470)
+INSERT INTO "unittesting$unittest" VALUES(9570149208162735,TRUE,NULL,NULL,FALSE,'UnitTesting.Test_IsAssertionErrorCheck',NULL,NULL,NULL)
+DELETE FROM "unittesting$unittest_testsuite" WHERE "unittesting$unittestid"=9570149208162735 AND "unittesting$testsuiteid"=7318349394477470
+INSERT INTO "unittesting$unittest_testsuite" VALUES(9570149208162735,7318349394477470)
+INSERT INTO "unittesting$unittest" VALUES(9570149208162736,TRUE,NULL,NULL,FALSE,'UnitTesting.Test_ValidUnitTest',NULL,NULL,NULL)
+DELETE FROM "unittesting$unittest_testsuite" WHERE "unittesting$unittestid"=9570149208162736 AND "unittesting$testsuiteid"=7318349394477470
+INSERT INTO "unittesting$unittest_testsuite" VALUES(9570149208162736,7318349394477470)
+INSERT INTO "unittesting$unittest" VALUES(9570149208162737,TRUE,NULL,NULL,FALSE,'UnitTesting.Test_WithoutReturn',NULL,NULL,NULL)
+DELETE FROM "unittesting$unittest_testsuite" WHERE "unittesting$unittestid"=9570149208162737 AND "unittesting$testsuiteid"=7318349394477470
+INSERT INTO "unittesting$unittest_testsuite" VALUES(9570149208162737,7318349394477470)
+INSERT INTO "unittesting$unittest" VALUES(9570149208162738,TRUE,NULL,NULL,FALSE,'UnitTesting.UT_ValidUnitTest',NULL,NULL,NULL)
+DELETE FROM "unittesting$unittest_testsuite" WHERE "unittesting$unittestid"=9570149208162738 AND "unittesting$testsuiteid"=7318349394477470
+INSERT INTO "unittesting$unittest_testsuite" VALUES(9570149208162738,7318349394477470)
+INSERT INTO "unittesting$unittest" VALUES(9570149208162739,FALSE,NULL,NULL,FALSE,'unittesting.UnittestingUnitTest1/testOfOneSecondSetupAndOneSecundRun',NULL,NULL,NULL)
+DELETE FROM "unittesting$unittest_testsuite" WHERE "unittesting$unittestid"=9570149208162739 AND "unittesting$testsuiteid"=7318349394477470
+INSERT INTO "unittesting$unittest_testsuite" VALUES(9570149208162739,7318349394477470)
+INSERT INTO "unittesting$unittest" VALUES(9570149208162740,FALSE,NULL,NULL,FALSE,'unittesting.UnittestingUnitTest1/testThatThrowsException',NULL,NULL,NULL)
+DELETE FROM "unittesting$unittest_testsuite" WHERE "unittesting$unittestid"=9570149208162740 AND "unittesting$testsuiteid"=7318349394477470
+INSERT INTO "unittesting$unittest_testsuite" VALUES(9570149208162740,7318349394477470)
+INSERT INTO "unittesting$unittest" VALUES(9570149208162741,FALSE,NULL,NULL,FALSE,'unittesting.UnittestingUnitTest2/evenMoreUnitTests',NULL,NULL,NULL)
+DELETE FROM "unittesting$unittest_testsuite" WHERE "unittesting$unittestid"=9570149208162741 AND "unittesting$testsuiteid"=7318349394477470
+INSERT INTO "unittesting$unittest_testsuite" VALUES(9570149208162741,7318349394477470)
+DELETE FROM "unittesting$testsuite" WHERE "id"=7318349394477470
+INSERT INTO "unittesting$testsuite" VALUES(7318349394477470,8,0,'Test_',0,TRUE,'UT_','UnitTesting',NULL,NULL)
+INSERT INTO "unittesting$unittest" VALUES(9570149208163106,TRUE,NULL,NULL,FALSE,'SampleModule.Test_CurrentUser',NULL,NULL,NULL)
+INSERT INTO "unittesting$unittest_testsuite" VALUES(9570149208163106,7318349394477966)
+INSERT INTO "unittesting$testsuite" VALUES(7318349394477966,1,0,'Test_',0,TRUE,'UT_','SampleModule',NULL,NULL)
+COMMIT
+/*C8*/INSERT INTO "system$backgroundjob" VALUES(8444249301320582,NULL,'2021-10-14 10:52:38.529000',FALSE,1634208749237,NULL)
+INSERT INTO "system$backgroundjob_session" VALUES(8444249301320582,11821949021848553)
+COMMIT
+/*C4*/SET SCHEMA PUBLIC
+INSERT INTO "system$session" VALUES(11821949021848555,NULL,'c80c68fe-94f3-441c-be8f-bb2caf01859b','2021-10-14 10:52:38.557000','b82cc5a8-6d22-46ea-8997-31523f5a8e63','2021-10-14 10:52:38.557000',FALSE,'cf72dae2-c3db-44cd-83da-04e5e2147c38')
+INSERT INTO "system$session_user" VALUES(11821949021848555,5348024557502467)
+COMMIT
+DELETE FROM "system$session" WHERE "id"=11821949021848555
+DELETE FROM "system$session_user" WHERE "system$sessionid"=11821949021848555 AND "system$userid"=5348024557502467
+COMMIT
+/*C7*/DELETE FROM "unittesting$unittest" WHERE "id"=9570149208163106
+INSERT INTO "unittesting$unittest" VALUES(9570149208163106,TRUE,'268 milliseconds','Microflow completed successfully',FALSE,'SampleModule.Test_CurrentUser','_3_Success','Starting microflow test ''SampleModule.Test_CurrentUser''','2021-10-14 10:52:38.533000')
+COMMIT
+DELETE FROM "system$backgroundjob" WHERE "id"=8444249301320582
+INSERT INTO "system$backgroundjob" VALUES(8444249301320582,'2021-10-14 10:52:38.809000','2021-10-14 10:52:38.529000',FALSE,1634208749237,'{"body":{"changes":{},"commits":["9570149208163106"],"committedObjectsOmitted":false,"deletes":[],"instructions":[{"args":{"classnames":["UnitTesting.UnitTest"]},"target":"system","type":"refresh_class"},{"args":{"ObjectIds":["9570149208163106"]},"target":"system","type":"refresh_object_list"}],"newpersistable":[],"objects":[{"attributes":{"Name":{"value":"SampleModule.Test_CurrentUser","readonly":true},"UnitTesting.UnitTest_TestSuite":{"value":"7318349394477966","readonly":true},"LastStep":{"value":"Starting microflow test ''SampleModule.Test_CurrentUser''","readonly":true},"ReadableTime":{"value":"268 milliseconds","readonly":true},"LastRun":{"value":1634208758533,"readonly":true},"_dirty":{"value":false,"readonly":true},"Result":{"value":"_3_Success","readonly":true},"ResultMessage":{"value":"Microflow completed successfully","readonly":true},"IsMf":{"value":true,"readonly":true}},"guid":"9570149208163106","hash":"yGjlcSSTIbrSDW9OxU+I+rXfVL9WjfgxGOTkibc4lPM=","objectType":"UnitTesting.UnitTest"}],"resets":{}},"status":200}')
+COMMIT
+/*C8*/DELETE FROM "system$backgroundjob" WHERE "id"=8444249301320582
+DELETE FROM "system$backgroundjob_session" WHERE "system$backgroundjobid"=8444249301320582 AND "system$sessionid"=11821949021848553
+COMMIT
+/*C7*/DELETE FROM "unittesting$unittest" WHERE "id"=9570149208163106
+DELETE FROM "unittesting$unittest_testsuite" WHERE "unittesting$unittestid"=9570149208163106 AND "unittesting$testsuiteid"=7318349394477966
+DELETE FROM "unittesting$testsuite" WHERE "id"=7318349394477966
+DELETE FROM "unittesting$unittest" WHERE "id"=9570149208162734
+DELETE FROM "unittesting$unittest" WHERE "id"=9570149208162735
+DELETE FROM "unittesting$unittest" WHERE "id"=9570149208162736
+DELETE FROM "unittesting$unittest" WHERE "id"=9570149208162737
+DELETE FROM "unittesting$unittest" WHERE "id"=9570149208162738
+DELETE FROM "unittesting$unittest" WHERE "id"=9570149208162739
+DELETE FROM "unittesting$unittest" WHERE "id"=9570149208162740
+DELETE FROM "unittesting$unittest" WHERE "id"=9570149208162741
+INSERT INTO "unittesting$unittest" VALUES(9570149208162734,TRUE,NULL,NULL,FALSE,'UnitTesting.Test_FailingUnitTest',NULL,NULL,NULL)
+DELETE FROM "unittesting$unittest_testsuite" WHERE "unittesting$unittestid"=9570149208162734 AND "unittesting$testsuiteid"=7318349394477470
+INSERT INTO "unittesting$unittest_testsuite" VALUES(9570149208162734,7318349394477470)
+INSERT INTO "unittesting$unittest" VALUES(9570149208162735,TRUE,NULL,NULL,FALSE,'UnitTesting.Test_IsAssertionErrorCheck',NULL,NULL,NULL)
+DELETE FROM "unittesting$unittest_testsuite" WHERE "unittesting$unittestid"=9570149208162735 AND "unittesting$testsuiteid"=7318349394477470
+INSERT INTO "unittesting$unittest_testsuite" VALUES(9570149208162735,7318349394477470)
+INSERT INTO "unittesting$unittest" VALUES(9570149208162736,TRUE,NULL,NULL,FALSE,'UnitTesting.Test_ValidUnitTest',NULL,NULL,NULL)
+DELETE FROM "unittesting$unittest_testsuite" WHERE "unittesting$unittestid"=9570149208162736 AND "unittesting$testsuiteid"=7318349394477470
+INSERT INTO "unittesting$unittest_testsuite" VALUES(9570149208162736,7318349394477470)
+INSERT INTO "unittesting$unittest" VALUES(9570149208162737,TRUE,NULL,NULL,FALSE,'UnitTesting.Test_WithoutReturn',NULL,NULL,NULL)
+DELETE FROM "unittesting$unittest_testsuite" WHERE "unittesting$unittestid"=9570149208162737 AND "unittesting$testsuiteid"=7318349394477470
+INSERT INTO "unittesting$unittest_testsuite" VALUES(9570149208162737,7318349394477470)
+INSERT INTO "unittesting$unittest" VALUES(9570149208162738,TRUE,NULL,NULL,FALSE,'UnitTesting.UT_ValidUnitTest',NULL,NULL,NULL)
+DELETE FROM "unittesting$unittest_testsuite" WHERE "unittesting$unittestid"=9570149208162738 AND "unittesting$testsuiteid"=7318349394477470
+INSERT INTO "unittesting$unittest_testsuite" VALUES(9570149208162738,7318349394477470)
+INSERT INTO "unittesting$unittest" VALUES(9570149208162739,FALSE,NULL,NULL,FALSE,'unittesting.UnittestingUnitTest1/testOfOneSecondSetupAndOneSecundRun',NULL,NULL,NULL)
+DELETE FROM "unittesting$unittest_testsuite" WHERE "unittesting$unittestid"=9570149208162739 AND "unittesting$testsuiteid"=7318349394477470
+INSERT INTO "unittesting$unittest_testsuite" VALUES(9570149208162739,7318349394477470)
+INSERT INTO "unittesting$unittest" VALUES(9570149208162740,FALSE,NULL,NULL,FALSE,'unittesting.UnittestingUnitTest1/testThatThrowsException',NULL,NULL,NULL)
+DELETE FROM "unittesting$unittest_testsuite" WHERE "unittesting$unittestid"=9570149208162740 AND "unittesting$testsuiteid"=7318349394477470
+INSERT INTO "unittesting$unittest_testsuite" VALUES(9570149208162740,7318349394477470)
+INSERT INTO "unittesting$unittest" VALUES(9570149208162741,FALSE,NULL,NULL,FALSE,'unittesting.UnittestingUnitTest2/evenMoreUnitTests',NULL,NULL,NULL)
+DELETE FROM "unittesting$unittest_testsuite" WHERE "unittesting$unittestid"=9570149208162741 AND "unittesting$testsuiteid"=7318349394477470
+INSERT INTO "unittesting$unittest_testsuite" VALUES(9570149208162741,7318349394477470)
+DELETE FROM "unittesting$testsuite" WHERE "id"=7318349394477470
+INSERT INTO "unittesting$testsuite" VALUES(7318349394477470,8,0,'Test_',0,TRUE,'UT_','UnitTesting',NULL,NULL)
+INSERT INTO "unittesting$unittest" VALUES(9570149208163107,TRUE,NULL,NULL,FALSE,'SampleModule.Test_CurrentUser',NULL,NULL,NULL)
+INSERT INTO "unittesting$unittest_testsuite" VALUES(9570149208163107,7318349394477970)
+INSERT INTO "unittesting$testsuite" VALUES(7318349394477970,1,0,'Test_',0,TRUE,'UT_','SampleModule',NULL,NULL)
+COMMIT
+INSERT INTO "system$backgroundjob" VALUES(8444249301320583,NULL,'2021-10-14 10:52:41.369000',FALSE,1634208749238,NULL)
+INSERT INTO "system$backgroundjob_session" VALUES(8444249301320583,11821949021848553)
+COMMIT
+/*C6*/SET SCHEMA PUBLIC
+INSERT INTO "system$session" VALUES(11821949021848556,NULL,'6b039c89-f996-4a25-9108-2984f843f057','2021-10-14 10:52:41.391000','41860ee6-d44c-43f9-8e42-f054ea00bfec','2021-10-14 10:52:41.391000',FALSE,'12b44e38-cf1d-47ba-bc17-9b01e65a7af8')
+INSERT INTO "system$session_user" VALUES(11821949021848556,5348024557502467)
+COMMIT
+DELETE FROM "system$session" WHERE "id"=11821949021848556
+DELETE FROM "system$session_user" WHERE "system$sessionid"=11821949021848556 AND "system$userid"=5348024557502467
+COMMIT
+/*C4*/DELETE FROM "unittesting$unittest" WHERE "id"=9570149208163107
+INSERT INTO "unittesting$unittest" VALUES(9570149208163107,TRUE,'247 milliseconds','Microflow completed successfully',FALSE,'SampleModule.Test_CurrentUser','_3_Success','Starting microflow test ''SampleModule.Test_CurrentUser''','2021-10-14 10:52:41.371000')
+COMMIT
+DELETE FROM "system$backgroundjob" WHERE "id"=8444249301320583
+INSERT INTO "system$backgroundjob" VALUES(8444249301320583,'2021-10-14 10:52:41.627000','2021-10-14 10:52:41.369000',FALSE,1634208749238,'{"body":{"changes":{},"commits":["9570149208163107"],"committedObjectsOmitted":false,"deletes":[],"instructions":[{"args":{"classnames":["UnitTesting.UnitTest"]},"target":"system","type":"refresh_class"},{"args":{"ObjectIds":["9570149208163107"]},"target":"system","type":"refresh_object_list"}],"newpersistable":[],"objects":[{"attributes":{"Name":{"value":"SampleModule.Test_CurrentUser","readonly":true},"UnitTesting.UnitTest_TestSuite":{"value":"7318349394477970","readonly":true},"LastStep":{"value":"Starting microflow test ''SampleModule.Test_CurrentUser''","readonly":true},"ReadableTime":{"value":"247 milliseconds","readonly":true},"LastRun":{"value":1634208761371,"readonly":true},"_dirty":{"value":false,"readonly":true},"Result":{"value":"_3_Success","readonly":true},"ResultMessage":{"value":"Microflow completed successfully","readonly":true},"IsMf":{"value":true,"readonly":true}},"guid":"9570149208163107","hash":"289C6bprdnGX+/SksjKlQ16Tcik5GTE/+BPfxpGzzl8=","objectType":"UnitTesting.UnitTest"}],"resets":{}},"status":200}')
+COMMIT
+/*C6*/DELETE FROM "system$backgroundjob" WHERE "id"=8444249301320583
+DELETE FROM "system$backgroundjob_session" WHERE "system$backgroundjobid"=8444249301320583 AND "system$sessionid"=11821949021848553
+COMMIT
+DELETE FROM "unittesting$unittest" WHERE "id"=9570149208163107
+DELETE FROM "unittesting$unittest_testsuite" WHERE "unittesting$unittestid"=9570149208163107 AND "unittesting$testsuiteid"=7318349394477970
+DELETE FROM "unittesting$testsuite" WHERE "id"=7318349394477970
+DELETE FROM "unittesting$unittest" WHERE "id"=9570149208162734
+DELETE FROM "unittesting$unittest" WHERE "id"=9570149208162735
+DELETE FROM "unittesting$unittest" WHERE "id"=9570149208162736
+DELETE FROM "unittesting$unittest" WHERE "id"=9570149208162737
+DELETE FROM "unittesting$unittest" WHERE "id"=9570149208162738
+DELETE FROM "unittesting$unittest" WHERE "id"=9570149208162739
+DELETE FROM "unittesting$unittest" WHERE "id"=9570149208162740
+DELETE FROM "unittesting$unittest" WHERE "id"=9570149208162741
+INSERT INTO "unittesting$unittest" VALUES(9570149208162734,TRUE,NULL,NULL,FALSE,'UnitTesting.Test_FailingUnitTest',NULL,NULL,NULL)
+DELETE FROM "unittesting$unittest_testsuite" WHERE "unittesting$unittestid"=9570149208162734 AND "unittesting$testsuiteid"=7318349394477470
+INSERT INTO "unittesting$unittest_testsuite" VALUES(9570149208162734,7318349394477470)
+INSERT INTO "unittesting$unittest" VALUES(9570149208162735,TRUE,NULL,NULL,FALSE,'UnitTesting.Test_IsAssertionErrorCheck',NULL,NULL,NULL)
+DELETE FROM "unittesting$unittest_testsuite" WHERE "unittesting$unittestid"=9570149208162735 AND "unittesting$testsuiteid"=7318349394477470
+INSERT INTO "unittesting$unittest_testsuite" VALUES(9570149208162735,7318349394477470)
+INSERT INTO "unittesting$unittest" VALUES(9570149208162736,TRUE,NULL,NULL,FALSE,'UnitTesting.Test_ValidUnitTest',NULL,NULL,NULL)
+DELETE FROM "unittesting$unittest_testsuite" WHERE "unittesting$unittestid"=9570149208162736 AND "unittesting$testsuiteid"=7318349394477470
+INSERT INTO "unittesting$unittest_testsuite" VALUES(9570149208162736,7318349394477470)
+INSERT INTO "unittesting$unittest" VALUES(9570149208162737,TRUE,NULL,NULL,FALSE,'UnitTesting.Test_WithoutReturn',NULL,NULL,NULL)
+DELETE FROM "unittesting$unittest_testsuite" WHERE "unittesting$unittestid"=9570149208162737 AND "unittesting$testsuiteid"=7318349394477470
+INSERT INTO "unittesting$unittest_testsuite" VALUES(9570149208162737,7318349394477470)
+INSERT INTO "unittesting$unittest" VALUES(9570149208162738,TRUE,NULL,NULL,FALSE,'UnitTesting.UT_ValidUnitTest',NULL,NULL,NULL)
+DELETE FROM "unittesting$unittest_testsuite" WHERE "unittesting$unittestid"=9570149208162738 AND "unittesting$testsuiteid"=7318349394477470
+INSERT INTO "unittesting$unittest_testsuite" VALUES(9570149208162738,7318349394477470)
+INSERT INTO "unittesting$unittest" VALUES(9570149208162739,FALSE,NULL,NULL,FALSE,'unittesting.UnittestingUnitTest1/testOfOneSecondSetupAndOneSecundRun',NULL,NULL,NULL)
+DELETE FROM "unittesting$unittest_testsuite" WHERE "unittesting$unittestid"=9570149208162739 AND "unittesting$testsuiteid"=7318349394477470
+INSERT INTO "unittesting$unittest_testsuite" VALUES(9570149208162739,7318349394477470)
+INSERT INTO "unittesting$unittest" VALUES(9570149208162740,FALSE,NULL,NULL,FALSE,'unittesting.UnittestingUnitTest1/testThatThrowsException',NULL,NULL,NULL)
+DELETE FROM "unittesting$unittest_testsuite" WHERE "unittesting$unittestid"=9570149208162740 AND "unittesting$testsuiteid"=7318349394477470
+INSERT INTO "unittesting$unittest_testsuite" VALUES(9570149208162740,7318349394477470)
+INSERT INTO "unittesting$unittest" VALUES(9570149208162741,FALSE,NULL,NULL,FALSE,'unittesting.UnittestingUnitTest2/evenMoreUnitTests',NULL,NULL,NULL)
+DELETE FROM "unittesting$unittest_testsuite" WHERE "unittesting$unittestid"=9570149208162741 AND "unittesting$testsuiteid"=7318349394477470
+INSERT INTO "unittesting$unittest_testsuite" VALUES(9570149208162741,7318349394477470)
+DELETE FROM "unittesting$testsuite" WHERE "id"=7318349394477470
+INSERT INTO "unittesting$testsuite" VALUES(7318349394477470,8,0,'Test_',0,TRUE,'UT_','UnitTesting',NULL,NULL)
+INSERT INTO "unittesting$unittest" VALUES(9570149208163108,TRUE,NULL,NULL,FALSE,'SampleModule.Test_CurrentUser',NULL,NULL,NULL)
+INSERT INTO "unittesting$unittest_testsuite" VALUES(9570149208163108,7318349394477974)
+INSERT INTO "unittesting$testsuite" VALUES(7318349394477974,1,0,'Test_',0,TRUE,'UT_','SampleModule',NULL,NULL)
+COMMIT
+/*C4*/INSERT INTO "system$backgroundjob" VALUES(8444249301320584,NULL,'2021-10-14 10:52:44.393000',FALSE,1634208749239,NULL)
+INSERT INTO "system$backgroundjob_session" VALUES(8444249301320584,11821949021848553)
+COMMIT
+/*C6*/INSERT INTO "system$session" VALUES(11821949021848557,NULL,'91019a18-6532-45f8-a1d3-4fc14c871fad','2021-10-14 10:52:44.417000','4a3d3e5b-af04-4d8b-9bfa-4f9d1a959d28','2021-10-14 10:52:44.417000',FALSE,'3cf5e769-e2b0-4217-8db5-61c5d0a5e115')
+INSERT INTO "system$session_user" VALUES(11821949021848557,5348024557502467)
+COMMIT
+DELETE FROM "system$session" WHERE "id"=11821949021848557
+DELETE FROM "system$session_user" WHERE "system$sessionid"=11821949021848557 AND "system$userid"=5348024557502467
+COMMIT
+/*C7*/DELETE FROM "unittesting$unittest" WHERE "id"=9570149208163108
+INSERT INTO "unittesting$unittest" VALUES(9570149208163108,TRUE,'252 milliseconds','Microflow completed successfully',FALSE,'SampleModule.Test_CurrentUser','_3_Success','Starting microflow test ''SampleModule.Test_CurrentUser''','2021-10-14 10:52:44.394000')
+COMMIT
+DELETE FROM "system$backgroundjob" WHERE "id"=8444249301320584
+INSERT INTO "system$backgroundjob" VALUES(8444249301320584,'2021-10-14 10:52:44.654000','2021-10-14 10:52:44.393000',FALSE,1634208749239,'{"body":{"changes":{},"commits":["9570149208163108"],"committedObjectsOmitted":false,"deletes":[],"instructions":[{"args":{"classnames":["UnitTesting.UnitTest"]},"target":"system","type":"refresh_class"},{"args":{"ObjectIds":["9570149208163108"]},"target":"system","type":"refresh_object_list"}],"newpersistable":[],"objects":[{"attributes":{"Name":{"value":"SampleModule.Test_CurrentUser","readonly":true},"UnitTesting.UnitTest_TestSuite":{"value":"7318349394477974","readonly":true},"LastStep":{"value":"Starting microflow test ''SampleModule.Test_CurrentUser''","readonly":true},"ReadableTime":{"value":"252 milliseconds","readonly":true},"LastRun":{"value":1634208764394,"readonly":true},"_dirty":{"value":false,"readonly":true},"Result":{"value":"_3_Success","readonly":true},"ResultMessage":{"value":"Microflow completed successfully","readonly":true},"IsMf":{"value":true,"readonly":true}},"guid":"9570149208163108","hash":"b1BCLTT4pyKx+WO/xB9c0575EFudLQwDBb1Sa/0bf9k=","objectType":"UnitTesting.UnitTest"}],"resets":{}},"status":200}')
+COMMIT
+DELETE FROM "system$backgroundjob" WHERE "id"=8444249301320584
+DELETE FROM "system$backgroundjob_session" WHERE "system$backgroundjobid"=8444249301320584 AND "system$sessionid"=11821949021848553
+COMMIT
+DELETE FROM "unittesting$unittest" WHERE "id"=9570149208163108
+DELETE FROM "unittesting$unittest_testsuite" WHERE "unittesting$unittestid"=9570149208163108 AND "unittesting$testsuiteid"=7318349394477974
+DELETE FROM "unittesting$testsuite" WHERE "id"=7318349394477974
+DELETE FROM "unittesting$unittest" WHERE "id"=9570149208162734
+DELETE FROM "unittesting$unittest" WHERE "id"=9570149208162735
+DELETE FROM "unittesting$unittest" WHERE "id"=9570149208162736
+DELETE FROM "unittesting$unittest" WHERE "id"=9570149208162737
+DELETE FROM "unittesting$unittest" WHERE "id"=9570149208162738
+DELETE FROM "unittesting$unittest" WHERE "id"=9570149208162739
+DELETE FROM "unittesting$unittest" WHERE "id"=9570149208162740
+DELETE FROM "unittesting$unittest" WHERE "id"=9570149208162741
+INSERT INTO "unittesting$unittest" VALUES(9570149208162734,TRUE,NULL,NULL,FALSE,'UnitTesting.Test_FailingUnitTest',NULL,NULL,NULL)
+DELETE FROM "unittesting$unittest_testsuite" WHERE "unittesting$unittestid"=9570149208162734 AND "unittesting$testsuiteid"=7318349394477470
+INSERT INTO "unittesting$unittest_testsuite" VALUES(9570149208162734,7318349394477470)
+INSERT INTO "unittesting$unittest" VALUES(9570149208162735,TRUE,NULL,NULL,FALSE,'UnitTesting.Test_IsAssertionErrorCheck',NULL,NULL,NULL)
+DELETE FROM "unittesting$unittest_testsuite" WHERE "unittesting$unittestid"=9570149208162735 AND "unittesting$testsuiteid"=7318349394477470
+INSERT INTO "unittesting$unittest_testsuite" VALUES(9570149208162735,7318349394477470)
+INSERT INTO "unittesting$unittest" VALUES(9570149208162736,TRUE,NULL,NULL,FALSE,'UnitTesting.Test_ValidUnitTest',NULL,NULL,NULL)
+DELETE FROM "unittesting$unittest_testsuite" WHERE "unittesting$unittestid"=9570149208162736 AND "unittesting$testsuiteid"=7318349394477470
+INSERT INTO "unittesting$unittest_testsuite" VALUES(9570149208162736,7318349394477470)
+INSERT INTO "unittesting$unittest" VALUES(9570149208162737,TRUE,NULL,NULL,FALSE,'UnitTesting.Test_WithoutReturn',NULL,NULL,NULL)
+DELETE FROM "unittesting$unittest_testsuite" WHERE "unittesting$unittestid"=9570149208162737 AND "unittesting$testsuiteid"=7318349394477470
+INSERT INTO "unittesting$unittest_testsuite" VALUES(9570149208162737,7318349394477470)
+INSERT INTO "unittesting$unittest" VALUES(9570149208162738,TRUE,NULL,NULL,FALSE,'UnitTesting.UT_ValidUnitTest',NULL,NULL,NULL)
+DELETE FROM "unittesting$unittest_testsuite" WHERE "unittesting$unittestid"=9570149208162738 AND "unittesting$testsuiteid"=7318349394477470
+INSERT INTO "unittesting$unittest_testsuite" VALUES(9570149208162738,7318349394477470)
+INSERT INTO "unittesting$unittest" VALUES(9570149208162739,FALSE,NULL,NULL,FALSE,'unittesting.UnittestingUnitTest1/testOfOneSecondSetupAndOneSecundRun',NULL,NULL,NULL)
+DELETE FROM "unittesting$unittest_testsuite" WHERE "unittesting$unittestid"=9570149208162739 AND "unittesting$testsuiteid"=7318349394477470
+INSERT INTO "unittesting$unittest_testsuite" VALUES(9570149208162739,7318349394477470)
+INSERT INTO "unittesting$unittest" VALUES(9570149208162740,FALSE,NULL,NULL,FALSE,'unittesting.UnittestingUnitTest1/testThatThrowsException',NULL,NULL,NULL)
+DELETE FROM "unittesting$unittest_testsuite" WHERE "unittesting$unittestid"=9570149208162740 AND "unittesting$testsuiteid"=7318349394477470
+INSERT INTO "unittesting$unittest_testsuite" VALUES(9570149208162740,7318349394477470)
+INSERT INTO "unittesting$unittest" VALUES(9570149208162741,FALSE,NULL,NULL,FALSE,'unittesting.UnittestingUnitTest2/evenMoreUnitTests',NULL,NULL,NULL)
+DELETE FROM "unittesting$unittest_testsuite" WHERE "unittesting$unittestid"=9570149208162741 AND "unittesting$testsuiteid"=7318349394477470
+INSERT INTO "unittesting$unittest_testsuite" VALUES(9570149208162741,7318349394477470)
+DELETE FROM "unittesting$testsuite" WHERE "id"=7318349394477470
+INSERT INTO "unittesting$testsuite" VALUES(7318349394477470,8,0,'Test_',0,TRUE,'UT_','UnitTesting',NULL,NULL)
+INSERT INTO "unittesting$unittest" VALUES(9570149208163109,TRUE,NULL,NULL,FALSE,'SampleModule.Test_CurrentUser',NULL,NULL,NULL)
+INSERT INTO "unittesting$unittest_testsuite" VALUES(9570149208163109,7318349394477978)
+INSERT INTO "unittesting$testsuite" VALUES(7318349394477978,1,0,'Test_',0,TRUE,'UT_','SampleModule',NULL,NULL)
+COMMIT
+/*C6*/INSERT INTO "system$backgroundjob" VALUES(8444249301320585,NULL,'2021-10-14 10:52:47.281000',FALSE,1634208749240,NULL)
+INSERT INTO "system$backgroundjob_session" VALUES(8444249301320585,11821949021848553)
+COMMIT
+/*C8*/INSERT INTO "system$session" VALUES(11821949021848558,NULL,'a7613816-f039-40e3-beb8-16dc42bf1fe6','2021-10-14 10:52:47.301000','b9543677-b46c-4654-93e6-8aaca2cea5f9','2021-10-14 10:52:47.301000',FALSE,'b681ea77-11a2-4c39-a3e9-60b9dd7dbee8')
+INSERT INTO "system$session_user" VALUES(11821949021848558,5348024557502467)
+COMMIT
+DELETE FROM "system$session" WHERE "id"=11821949021848558
+DELETE FROM "system$session_user" WHERE "system$sessionid"=11821949021848558 AND "system$userid"=5348024557502467
+COMMIT
+/*C7*/DELETE FROM "unittesting$unittest" WHERE "id"=9570149208163109
+INSERT INTO "unittesting$unittest" VALUES(9570149208163109,TRUE,'262 milliseconds','Microflow completed successfully',FALSE,'SampleModule.Test_CurrentUser','_3_Success','Starting microflow test ''SampleModule.Test_CurrentUser''','2021-10-14 10:52:47.283000')
+COMMIT
+DELETE FROM "system$backgroundjob" WHERE "id"=8444249301320585
+INSERT INTO "system$backgroundjob" VALUES(8444249301320585,'2021-10-14 10:52:47.552000','2021-10-14 10:52:47.281000',FALSE,1634208749240,'{"body":{"changes":{},"commits":["9570149208163109"],"committedObjectsOmitted":false,"deletes":[],"instructions":[{"args":{"classnames":["UnitTesting.UnitTest"]},"target":"system","type":"refresh_class"},{"args":{"ObjectIds":["9570149208163109"]},"target":"system","type":"refresh_object_list"}],"newpersistable":[],"objects":[{"attributes":{"Name":{"value":"SampleModule.Test_CurrentUser","readonly":true},"UnitTesting.UnitTest_TestSuite":{"value":"7318349394477978","readonly":true},"LastStep":{"value":"Starting microflow test ''SampleModule.Test_CurrentUser''","readonly":true},"ReadableTime":{"value":"262 milliseconds","readonly":true},"LastRun":{"value":1634208767283,"readonly":true},"_dirty":{"value":false,"readonly":true},"Result":{"value":"_3_Success","readonly":true},"ResultMessage":{"value":"Microflow completed successfully","readonly":true},"IsMf":{"value":true,"readonly":true}},"guid":"9570149208163109","hash":"KDGgFR3vR/HUc8a52/aiQ8/njW3lhHqsk6AGzovt7c8=","objectType":"UnitTesting.UnitTest"}],"resets":{}},"status":200}')
+COMMIT
+/*C6*/DELETE FROM "system$backgroundjob" WHERE "id"=8444249301320585
+DELETE FROM "system$backgroundjob_session" WHERE "system$backgroundjobid"=8444249301320585 AND "system$sessionid"=11821949021848553
+COMMIT
+/*C7*/DELETE FROM "unittesting$unittest" WHERE "id"=9570149208163109
+DELETE FROM "unittesting$unittest_testsuite" WHERE "unittesting$unittestid"=9570149208163109 AND "unittesting$testsuiteid"=7318349394477978
+DELETE FROM "unittesting$testsuite" WHERE "id"=7318349394477978
+DELETE FROM "unittesting$unittest" WHERE "id"=9570149208162734
+DELETE FROM "unittesting$unittest" WHERE "id"=9570149208162735
+DELETE FROM "unittesting$unittest" WHERE "id"=9570149208162736
+DELETE FROM "unittesting$unittest" WHERE "id"=9570149208162737
+DELETE FROM "unittesting$unittest" WHERE "id"=9570149208162738
+DELETE FROM "unittesting$unittest" WHERE "id"=9570149208162739
+DELETE FROM "unittesting$unittest" WHERE "id"=9570149208162740
+DELETE FROM "unittesting$unittest" WHERE "id"=9570149208162741
+INSERT INTO "unittesting$unittest" VALUES(9570149208162734,TRUE,NULL,NULL,FALSE,'UnitTesting.Test_FailingUnitTest',NULL,NULL,NULL)
+DELETE FROM "unittesting$unittest_testsuite" WHERE "unittesting$unittestid"=9570149208162734 AND "unittesting$testsuiteid"=7318349394477470
+INSERT INTO "unittesting$unittest_testsuite" VALUES(9570149208162734,7318349394477470)
+INSERT INTO "unittesting$unittest" VALUES(9570149208162735,TRUE,NULL,NULL,FALSE,'UnitTesting.Test_IsAssertionErrorCheck',NULL,NULL,NULL)
+DELETE FROM "unittesting$unittest_testsuite" WHERE "unittesting$unittestid"=9570149208162735 AND "unittesting$testsuiteid"=7318349394477470
+INSERT INTO "unittesting$unittest_testsuite" VALUES(9570149208162735,7318349394477470)
+INSERT INTO "unittesting$unittest" VALUES(9570149208162736,TRUE,NULL,NULL,FALSE,'UnitTesting.Test_ValidUnitTest',NULL,NULL,NULL)
+DELETE FROM "unittesting$unittest_testsuite" WHERE "unittesting$unittestid"=9570149208162736 AND "unittesting$testsuiteid"=7318349394477470
+INSERT INTO "unittesting$unittest_testsuite" VALUES(9570149208162736,7318349394477470)
+INSERT INTO "unittesting$unittest" VALUES(9570149208162737,TRUE,NULL,NULL,FALSE,'UnitTesting.Test_WithoutReturn',NULL,NULL,NULL)
+DELETE FROM "unittesting$unittest_testsuite" WHERE "unittesting$unittestid"=9570149208162737 AND "unittesting$testsuiteid"=7318349394477470
+INSERT INTO "unittesting$unittest_testsuite" VALUES(9570149208162737,7318349394477470)
+INSERT INTO "unittesting$unittest" VALUES(9570149208162738,TRUE,NULL,NULL,FALSE,'UnitTesting.UT_ValidUnitTest',NULL,NULL,NULL)
+DELETE FROM "unittesting$unittest_testsuite" WHERE "unittesting$unittestid"=9570149208162738 AND "unittesting$testsuiteid"=7318349394477470
+INSERT INTO "unittesting$unittest_testsuite" VALUES(9570149208162738,7318349394477470)
+INSERT INTO "unittesting$unittest" VALUES(9570149208162739,FALSE,NULL,NULL,FALSE,'unittesting.UnittestingUnitTest1/testOfOneSecondSetupAndOneSecundRun',NULL,NULL,NULL)
+DELETE FROM "unittesting$unittest_testsuite" WHERE "unittesting$unittestid"=9570149208162739 AND "unittesting$testsuiteid"=7318349394477470
+INSERT INTO "unittesting$unittest_testsuite" VALUES(9570149208162739,7318349394477470)
+INSERT INTO "unittesting$unittest" VALUES(9570149208162740,FALSE,NULL,NULL,FALSE,'unittesting.UnittestingUnitTest1/testThatThrowsException',NULL,NULL,NULL)
+DELETE FROM "unittesting$unittest_testsuite" WHERE "unittesting$unittestid"=9570149208162740 AND "unittesting$testsuiteid"=7318349394477470
+INSERT INTO "unittesting$unittest_testsuite" VALUES(9570149208162740,7318349394477470)
+INSERT INTO "unittesting$unittest" VALUES(9570149208162741,FALSE,NULL,NULL,FALSE,'unittesting.UnittestingUnitTest2/evenMoreUnitTests',NULL,NULL,NULL)
+DELETE FROM "unittesting$unittest_testsuite" WHERE "unittesting$unittestid"=9570149208162741 AND "unittesting$testsuiteid"=7318349394477470
+INSERT INTO "unittesting$unittest_testsuite" VALUES(9570149208162741,7318349394477470)
+DELETE FROM "unittesting$testsuite" WHERE "id"=7318349394477470
+INSERT INTO "unittesting$testsuite" VALUES(7318349394477470,8,0,'Test_',0,TRUE,'UT_','UnitTesting',NULL,NULL)
+INSERT INTO "unittesting$unittest" VALUES(9570149208163110,TRUE,NULL,NULL,FALSE,'SampleModule.Test_CurrentUser',NULL,NULL,NULL)
+INSERT INTO "unittesting$unittest_testsuite" VALUES(9570149208163110,7318349394477982)
+INSERT INTO "unittesting$testsuite" VALUES(7318349394477982,1,0,'Test_',0,TRUE,'UT_','SampleModule',NULL,NULL)
+COMMIT
+/*C8*/INSERT INTO "system$backgroundjob" VALUES(8444249301320586,NULL,'2021-10-14 10:52:50.197000',FALSE,1634208749241,NULL)
+INSERT INTO "system$backgroundjob_session" VALUES(8444249301320586,11821949021848553)
+COMMIT
+/*C4*/INSERT INTO "system$session" VALUES(11821949021848559,NULL,'26d683a4-b9c9-4c9e-a84f-1334a60c37bf','2021-10-14 10:52:50.216000','2aa1d49c-b27b-4871-97fc-1e091fd74654','2021-10-14 10:52:50.216000',FALSE,'7e75cc00-f590-468b-bd14-622955666d9f')
+INSERT INTO "system$session_user" VALUES(11821949021848559,5348024557502467)
+COMMIT
+DELETE FROM "system$session" WHERE "id"=11821949021848559
+DELETE FROM "system$session_user" WHERE "system$sessionid"=11821949021848559 AND "system$userid"=5348024557502467
+COMMIT
+/*C7*/DELETE FROM "unittesting$unittest" WHERE "id"=9570149208163110
+INSERT INTO "unittesting$unittest" VALUES(9570149208163110,TRUE,'231 milliseconds','Microflow completed successfully',FALSE,'SampleModule.Test_CurrentUser','_3_Success','Starting microflow test ''SampleModule.Test_CurrentUser''','2021-10-14 10:52:50.198000')
+COMMIT
+DELETE FROM "system$backgroundjob" WHERE "id"=8444249301320586
+INSERT INTO "system$backgroundjob" VALUES(8444249301320586,'2021-10-14 10:52:50.436000','2021-10-14 10:52:50.197000',FALSE,1634208749241,'{"body":{"changes":{},"commits":["9570149208163110"],"committedObjectsOmitted":false,"deletes":[],"instructions":[{"args":{"classnames":["UnitTesting.UnitTest"]},"target":"system","type":"refresh_class"},{"args":{"ObjectIds":["9570149208163110"]},"target":"system","type":"refresh_object_list"}],"newpersistable":[],"objects":[{"attributes":{"Name":{"value":"SampleModule.Test_CurrentUser","readonly":true},"UnitTesting.UnitTest_TestSuite":{"value":"7318349394477982","readonly":true},"LastStep":{"value":"Starting microflow test ''SampleModule.Test_CurrentUser''","readonly":true},"ReadableTime":{"value":"231 milliseconds","readonly":true},"LastRun":{"value":1634208770198,"readonly":true},"_dirty":{"value":false,"readonly":true},"Result":{"value":"_3_Success","readonly":true},"ResultMessage":{"value":"Microflow completed successfully","readonly":true},"IsMf":{"value":true,"readonly":true}},"guid":"9570149208163110","hash":"xErhbdscV49XXpA+ueEsyINnbvZn8hCNy+WiLoq4QUI=","objectType":"UnitTesting.UnitTest"}],"resets":{}},"status":200}')
+COMMIT
+/*C8*/DELETE FROM "system$backgroundjob" WHERE "id"=8444249301320586
+DELETE FROM "system$backgroundjob_session" WHERE "system$backgroundjobid"=8444249301320586 AND "system$sessionid"=11821949021848553
+COMMIT
+/*C2*/DELETE FROM "unittesting$unittest" WHERE "id"=9570149208163110
+DELETE FROM "unittesting$unittest_testsuite" WHERE "unittesting$unittestid"=9570149208163110 AND "unittesting$testsuiteid"=7318349394477982
+DELETE FROM "unittesting$testsuite" WHERE "id"=7318349394477982
+DELETE FROM "unittesting$unittest" WHERE "id"=9570149208162734
+DELETE FROM "unittesting$unittest" WHERE "id"=9570149208162735
+DELETE FROM "unittesting$unittest" WHERE "id"=9570149208162736
+DELETE FROM "unittesting$unittest" WHERE "id"=9570149208162737
+DELETE FROM "unittesting$unittest" WHERE "id"=9570149208162738
+DELETE FROM "unittesting$unittest" WHERE "id"=9570149208162739
+DELETE FROM "unittesting$unittest" WHERE "id"=9570149208162740
+DELETE FROM "unittesting$unittest" WHERE "id"=9570149208162741
+INSERT INTO "unittesting$unittest" VALUES(9570149208162734,TRUE,NULL,NULL,FALSE,'UnitTesting.Test_FailingUnitTest',NULL,NULL,NULL)
+DELETE FROM "unittesting$unittest_testsuite" WHERE "unittesting$unittestid"=9570149208162734 AND "unittesting$testsuiteid"=7318349394477470
+INSERT INTO "unittesting$unittest_testsuite" VALUES(9570149208162734,7318349394477470)
+INSERT INTO "unittesting$unittest" VALUES(9570149208162735,TRUE,NULL,NULL,FALSE,'UnitTesting.Test_IsAssertionErrorCheck',NULL,NULL,NULL)
+DELETE FROM "unittesting$unittest_testsuite" WHERE "unittesting$unittestid"=9570149208162735 AND "unittesting$testsuiteid"=7318349394477470
+INSERT INTO "unittesting$unittest_testsuite" VALUES(9570149208162735,7318349394477470)
+INSERT INTO "unittesting$unittest" VALUES(9570149208162736,TRUE,NULL,NULL,FALSE,'UnitTesting.Test_ValidUnitTest',NULL,NULL,NULL)
+DELETE FROM "unittesting$unittest_testsuite" WHERE "unittesting$unittestid"=9570149208162736 AND "unittesting$testsuiteid"=7318349394477470
+INSERT INTO "unittesting$unittest_testsuite" VALUES(9570149208162736,7318349394477470)
+INSERT INTO "unittesting$unittest" VALUES(9570149208162737,TRUE,NULL,NULL,FALSE,'UnitTesting.Test_WithoutReturn',NULL,NULL,NULL)
+DELETE FROM "unittesting$unittest_testsuite" WHERE "unittesting$unittestid"=9570149208162737 AND "unittesting$testsuiteid"=7318349394477470
+INSERT INTO "unittesting$unittest_testsuite" VALUES(9570149208162737,7318349394477470)
+INSERT INTO "unittesting$unittest" VALUES(9570149208162738,TRUE,NULL,NULL,FALSE,'UnitTesting.UT_ValidUnitTest',NULL,NULL,NULL)
+DELETE FROM "unittesting$unittest_testsuite" WHERE "unittesting$unittestid"=9570149208162738 AND "unittesting$testsuiteid"=7318349394477470
+INSERT INTO "unittesting$unittest_testsuite" VALUES(9570149208162738,7318349394477470)
+INSERT INTO "unittesting$unittest" VALUES(9570149208162739,FALSE,NULL,NULL,FALSE,'unittesting.UnittestingUnitTest1/testOfOneSecondSetupAndOneSecundRun',NULL,NULL,NULL)
+DELETE FROM "unittesting$unittest_testsuite" WHERE "unittesting$unittestid"=9570149208162739 AND "unittesting$testsuiteid"=7318349394477470
+INSERT INTO "unittesting$unittest_testsuite" VALUES(9570149208162739,7318349394477470)
+INSERT INTO "unittesting$unittest" VALUES(9570149208162740,FALSE,NULL,NULL,FALSE,'unittesting.UnittestingUnitTest1/testThatThrowsException',NULL,NULL,NULL)
+DELETE FROM "unittesting$unittest_testsuite" WHERE "unittesting$unittestid"=9570149208162740 AND "unittesting$testsuiteid"=7318349394477470
+INSERT INTO "unittesting$unittest_testsuite" VALUES(9570149208162740,7318349394477470)
+INSERT INTO "unittesting$unittest" VALUES(9570149208162741,FALSE,NULL,NULL,FALSE,'unittesting.UnittestingUnitTest2/evenMoreUnitTests',NULL,NULL,NULL)
+DELETE FROM "unittesting$unittest_testsuite" WHERE "unittesting$unittestid"=9570149208162741 AND "unittesting$testsuiteid"=7318349394477470
+INSERT INTO "unittesting$unittest_testsuite" VALUES(9570149208162741,7318349394477470)
+DELETE FROM "unittesting$testsuite" WHERE "id"=7318349394477470
+INSERT INTO "unittesting$testsuite" VALUES(7318349394477470,8,0,'Test_',0,TRUE,'UT_','UnitTesting',NULL,NULL)
+INSERT INTO "unittesting$unittest" VALUES(9570149208163111,TRUE,NULL,NULL,FALSE,'SampleModule.Test_CurrentUser',NULL,NULL,NULL)
+INSERT INTO "unittesting$unittest_testsuite" VALUES(9570149208163111,7318349394477986)
+INSERT INTO "unittesting$testsuite" VALUES(7318349394477986,1,0,'Test_',0,TRUE,'UT_','SampleModule',NULL,NULL)
+COMMIT
+INSERT INTO "system$backgroundjob" VALUES(8444249301320587,NULL,'2021-10-14 10:52:52.929000',FALSE,1634208749242,NULL)
+INSERT INTO "system$backgroundjob_session" VALUES(8444249301320587,11821949021848553)
+COMMIT
+/*C4*/INSERT INTO "system$session" VALUES(11821949021848560,NULL,'cceb0591-d035-4c23-884a-c695f7c736e3','2021-10-14 10:52:52.949000','d5854187-f84a-4478-a3c4-c537765ba7a6','2021-10-14 10:52:52.949000',FALSE,'1ecfb491-d4f6-420a-8d1f-abe42d5dba03')
+INSERT INTO "system$session_user" VALUES(11821949021848560,5348024557502467)
+COMMIT
+DELETE FROM "system$session" WHERE "id"=11821949021848560
+DELETE FROM "system$session_user" WHERE "system$sessionid"=11821949021848560 AND "system$userid"=5348024557502467
+COMMIT
+/*C7*/DELETE FROM "unittesting$unittest" WHERE "id"=9570149208163111
+INSERT INTO "unittesting$unittest" VALUES(9570149208163111,TRUE,'237 milliseconds','Microflow completed successfully',FALSE,'SampleModule.Test_CurrentUser','_3_Success','Starting microflow test ''SampleModule.Test_CurrentUser''','2021-10-14 10:52:52.931000')
+COMMIT
+DELETE FROM "system$backgroundjob" WHERE "id"=8444249301320587
+INSERT INTO "system$backgroundjob" VALUES(8444249301320587,'2021-10-14 10:52:53.175000','2021-10-14 10:52:52.929000',FALSE,1634208749242,'{"body":{"changes":{},"commits":["9570149208163111"],"committedObjectsOmitted":false,"deletes":[],"instructions":[{"args":{"classnames":["UnitTesting.UnitTest"]},"target":"system","type":"refresh_class"},{"args":{"ObjectIds":["9570149208163111"]},"target":"system","type":"refresh_object_list"}],"newpersistable":[],"objects":[{"attributes":{"Name":{"value":"SampleModule.Test_CurrentUser","readonly":true},"UnitTesting.UnitTest_TestSuite":{"value":"7318349394477986","readonly":true},"LastStep":{"value":"Starting microflow test ''SampleModule.Test_CurrentUser''","readonly":true},"ReadableTime":{"value":"237 milliseconds","readonly":true},"LastRun":{"value":1634208772931,"readonly":true},"_dirty":{"value":false,"readonly":true},"Result":{"value":"_3_Success","readonly":true},"ResultMessage":{"value":"Microflow completed successfully","readonly":true},"IsMf":{"value":true,"readonly":true}},"guid":"9570149208163111","hash":"28XYwbV11kXZ9o/rvioKOuAogkoT5N+mBhgNC7uPV8M=","objectType":"UnitTesting.UnitTest"}],"resets":{}},"status":200}')
+COMMIT
+/*C2*/DELETE FROM "system$backgroundjob" WHERE "id"=8444249301320587
+DELETE FROM "system$backgroundjob_session" WHERE "system$backgroundjobid"=8444249301320587 AND "system$sessionid"=11821949021848553
+COMMIT
+DELETE FROM "unittesting$unittest" WHERE "id"=9570149208163111
+DELETE FROM "unittesting$unittest_testsuite" WHERE "unittesting$unittestid"=9570149208163111 AND "unittesting$testsuiteid"=7318349394477986
+DELETE FROM "unittesting$testsuite" WHERE "id"=7318349394477986
+DELETE FROM "unittesting$unittest" WHERE "id"=9570149208162734
+DELETE FROM "unittesting$unittest" WHERE "id"=9570149208162735
+DELETE FROM "unittesting$unittest" WHERE "id"=9570149208162736
+DELETE FROM "unittesting$unittest" WHERE "id"=9570149208162737
+DELETE FROM "unittesting$unittest" WHERE "id"=9570149208162738
+DELETE FROM "unittesting$unittest" WHERE "id"=9570149208162739
+DELETE FROM "unittesting$unittest" WHERE "id"=9570149208162740
+DELETE FROM "unittesting$unittest" WHERE "id"=9570149208162741
+INSERT INTO "unittesting$unittest" VALUES(9570149208162734,TRUE,NULL,NULL,FALSE,'UnitTesting.Test_FailingUnitTest',NULL,NULL,NULL)
+DELETE FROM "unittesting$unittest_testsuite" WHERE "unittesting$unittestid"=9570149208162734 AND "unittesting$testsuiteid"=7318349394477470
+INSERT INTO "unittesting$unittest_testsuite" VALUES(9570149208162734,7318349394477470)
+INSERT INTO "unittesting$unittest" VALUES(9570149208162735,TRUE,NULL,NULL,FALSE,'UnitTesting.Test_IsAssertionErrorCheck',NULL,NULL,NULL)
+DELETE FROM "unittesting$unittest_testsuite" WHERE "unittesting$unittestid"=9570149208162735 AND "unittesting$testsuiteid"=7318349394477470
+INSERT INTO "unittesting$unittest_testsuite" VALUES(9570149208162735,7318349394477470)
+INSERT INTO "unittesting$unittest" VALUES(9570149208162736,TRUE,NULL,NULL,FALSE,'UnitTesting.Test_ValidUnitTest',NULL,NULL,NULL)
+DELETE FROM "unittesting$unittest_testsuite" WHERE "unittesting$unittestid"=9570149208162736 AND "unittesting$testsuiteid"=7318349394477470
+INSERT INTO "unittesting$unittest_testsuite" VALUES(9570149208162736,7318349394477470)
+INSERT INTO "unittesting$unittest" VALUES(9570149208162737,TRUE,NULL,NULL,FALSE,'UnitTesting.Test_WithoutReturn',NULL,NULL,NULL)
+DELETE FROM "unittesting$unittest_testsuite" WHERE "unittesting$unittestid"=9570149208162737 AND "unittesting$testsuiteid"=7318349394477470
+INSERT INTO "unittesting$unittest_testsuite" VALUES(9570149208162737,7318349394477470)
+INSERT INTO "unittesting$unittest" VALUES(9570149208162738,TRUE,NULL,NULL,FALSE,'UnitTesting.UT_ValidUnitTest',NULL,NULL,NULL)
+DELETE FROM "unittesting$unittest_testsuite" WHERE "unittesting$unittestid"=9570149208162738 AND "unittesting$testsuiteid"=7318349394477470
+INSERT INTO "unittesting$unittest_testsuite" VALUES(9570149208162738,7318349394477470)
+INSERT INTO "unittesting$unittest" VALUES(9570149208162739,FALSE,NULL,NULL,FALSE,'unittesting.UnittestingUnitTest1/testOfOneSecondSetupAndOneSecundRun',NULL,NULL,NULL)
+DELETE FROM "unittesting$unittest_testsuite" WHERE "unittesting$unittestid"=9570149208162739 AND "unittesting$testsuiteid"=7318349394477470
+INSERT INTO "unittesting$unittest_testsuite" VALUES(9570149208162739,7318349394477470)
+INSERT INTO "unittesting$unittest" VALUES(9570149208162740,FALSE,NULL,NULL,FALSE,'unittesting.UnittestingUnitTest1/testThatThrowsException',NULL,NULL,NULL)
+DELETE FROM "unittesting$unittest_testsuite" WHERE "unittesting$unittestid"=9570149208162740 AND "unittesting$testsuiteid"=7318349394477470
+INSERT INTO "unittesting$unittest_testsuite" VALUES(9570149208162740,7318349394477470)
+INSERT INTO "unittesting$unittest" VALUES(9570149208162741,FALSE,NULL,NULL,FALSE,'unittesting.UnittestingUnitTest2/evenMoreUnitTests',NULL,NULL,NULL)
+DELETE FROM "unittesting$unittest_testsuite" WHERE "unittesting$unittestid"=9570149208162741 AND "unittesting$testsuiteid"=7318349394477470
+INSERT INTO "unittesting$unittest_testsuite" VALUES(9570149208162741,7318349394477470)
+DELETE FROM "unittesting$testsuite" WHERE "id"=7318349394477470
+INSERT INTO "unittesting$testsuite" VALUES(7318349394477470,8,0,'Test_',0,TRUE,'UT_','UnitTesting',NULL,NULL)
+INSERT INTO "unittesting$unittest" VALUES(9570149208163112,TRUE,NULL,NULL,FALSE,'SampleModule.Test_CurrentUser',NULL,NULL,NULL)
+INSERT INTO "unittesting$unittest_testsuite" VALUES(9570149208163112,7318349394477990)
+INSERT INTO "unittesting$testsuite" VALUES(7318349394477990,1,0,'Test_',0,TRUE,'UT_','SampleModule',NULL,NULL)
+COMMIT
+/*C4*/INSERT INTO "system$backgroundjob" VALUES(8444249301320588,NULL,'2021-10-14 10:52:55.507000',FALSE,1634208749243,NULL)
+INSERT INTO "system$backgroundjob_session" VALUES(8444249301320588,11821949021848553)
+COMMIT
+/*C6*/INSERT INTO "system$session" VALUES(11821949021848561,NULL,'8800c52e-ad09-4671-bd07-5714072f0031','2021-10-14 10:52:55.528000','92676786-4128-42c8-8414-aec6858b0ea8','2021-10-14 10:52:55.528000',FALSE,'3830e913-f8e4-4fbc-8459-ceae8970ab5f')
+INSERT INTO "system$session_user" VALUES(11821949021848561,5348024557502467)
+COMMIT
+DELETE FROM "system$session" WHERE "id"=11821949021848561
+DELETE FROM "system$session_user" WHERE "system$sessionid"=11821949021848561 AND "system$userid"=5348024557502467
+COMMIT
+/*C2*/DELETE FROM "unittesting$unittest" WHERE "id"=9570149208163112
+INSERT INTO "unittesting$unittest" VALUES(9570149208163112,TRUE,'234 milliseconds','Microflow completed successfully',FALSE,'SampleModule.Test_CurrentUser','_3_Success','Starting microflow test ''SampleModule.Test_CurrentUser''','2021-10-14 10:52:55.509000')
+COMMIT
+DELETE FROM "system$backgroundjob" WHERE "id"=8444249301320588
+INSERT INTO "system$backgroundjob" VALUES(8444249301320588,'2021-10-14 10:52:55.750000','2021-10-14 10:52:55.507000',FALSE,1634208749243,'{"body":{"changes":{},"commits":["9570149208163112"],"committedObjectsOmitted":false,"deletes":[],"instructions":[{"args":{"classnames":["UnitTesting.UnitTest"]},"target":"system","type":"refresh_class"},{"args":{"ObjectIds":["9570149208163112"]},"target":"system","type":"refresh_object_list"}],"newpersistable":[],"objects":[{"attributes":{"Name":{"value":"SampleModule.Test_CurrentUser","readonly":true},"UnitTesting.UnitTest_TestSuite":{"value":"7318349394477990","readonly":true},"LastStep":{"value":"Starting microflow test ''SampleModule.Test_CurrentUser''","readonly":true},"ReadableTime":{"value":"234 milliseconds","readonly":true},"LastRun":{"value":1634208775509,"readonly":true},"_dirty":{"value":false,"readonly":true},"Result":{"value":"_3_Success","readonly":true},"ResultMessage":{"value":"Microflow completed successfully","readonly":true},"IsMf":{"value":true,"readonly":true}},"guid":"9570149208163112","hash":"2AYiv84rljU77e0FgJl2EsXZWj+GS/uXZq4lXhhSvyo=","objectType":"UnitTesting.UnitTest"}],"resets":{}},"status":200}')
+COMMIT
+/*C7*/DELETE FROM "system$backgroundjob" WHERE "id"=8444249301320588
+DELETE FROM "system$backgroundjob_session" WHERE "system$backgroundjobid"=8444249301320588 AND "system$sessionid"=11821949021848553
+COMMIT
+/*C2*/DELETE FROM "unittesting$unittest" WHERE "id"=9570149208163112
+DELETE FROM "unittesting$unittest_testsuite" WHERE "unittesting$unittestid"=9570149208163112 AND "unittesting$testsuiteid"=7318349394477990
+DELETE FROM "unittesting$testsuite" WHERE "id"=7318349394477990
+DELETE FROM "unittesting$unittest" WHERE "id"=9570149208162734
+DELETE FROM "unittesting$unittest" WHERE "id"=9570149208162735
+DELETE FROM "unittesting$unittest" WHERE "id"=9570149208162736
+DELETE FROM "unittesting$unittest" WHERE "id"=9570149208162737
+DELETE FROM "unittesting$unittest" WHERE "id"=9570149208162738
+DELETE FROM "unittesting$unittest" WHERE "id"=9570149208162739
+DELETE FROM "unittesting$unittest" WHERE "id"=9570149208162740
+DELETE FROM "unittesting$unittest" WHERE "id"=9570149208162741
+INSERT INTO "unittesting$unittest" VALUES(9570149208162734,TRUE,NULL,NULL,FALSE,'UnitTesting.Test_FailingUnitTest',NULL,NULL,NULL)
+DELETE FROM "unittesting$unittest_testsuite" WHERE "unittesting$unittestid"=9570149208162734 AND "unittesting$testsuiteid"=7318349394477470
+INSERT INTO "unittesting$unittest_testsuite" VALUES(9570149208162734,7318349394477470)
+INSERT INTO "unittesting$unittest" VALUES(9570149208162735,TRUE,NULL,NULL,FALSE,'UnitTesting.Test_IsAssertionErrorCheck',NULL,NULL,NULL)
+DELETE FROM "unittesting$unittest_testsuite" WHERE "unittesting$unittestid"=9570149208162735 AND "unittesting$testsuiteid"=7318349394477470
+INSERT INTO "unittesting$unittest_testsuite" VALUES(9570149208162735,7318349394477470)
+INSERT INTO "unittesting$unittest" VALUES(9570149208162736,TRUE,NULL,NULL,FALSE,'UnitTesting.Test_ValidUnitTest',NULL,NULL,NULL)
+DELETE FROM "unittesting$unittest_testsuite" WHERE "unittesting$unittestid"=9570149208162736 AND "unittesting$testsuiteid"=7318349394477470
+INSERT INTO "unittesting$unittest_testsuite" VALUES(9570149208162736,7318349394477470)
+INSERT INTO "unittesting$unittest" VALUES(9570149208162737,TRUE,NULL,NULL,FALSE,'UnitTesting.Test_WithoutReturn',NULL,NULL,NULL)
+DELETE FROM "unittesting$unittest_testsuite" WHERE "unittesting$unittestid"=9570149208162737 AND "unittesting$testsuiteid"=7318349394477470
+INSERT INTO "unittesting$unittest_testsuite" VALUES(9570149208162737,7318349394477470)
+INSERT INTO "unittesting$unittest" VALUES(9570149208162738,TRUE,NULL,NULL,FALSE,'UnitTesting.UT_ValidUnitTest',NULL,NULL,NULL)
+DELETE FROM "unittesting$unittest_testsuite" WHERE "unittesting$unittestid"=9570149208162738 AND "unittesting$testsuiteid"=7318349394477470
+INSERT INTO "unittesting$unittest_testsuite" VALUES(9570149208162738,7318349394477470)
+INSERT INTO "unittesting$unittest" VALUES(9570149208162739,FALSE,NULL,NULL,FALSE,'unittesting.UnittestingUnitTest1/testOfOneSecondSetupAndOneSecundRun',NULL,NULL,NULL)
+DELETE FROM "unittesting$unittest_testsuite" WHERE "unittesting$unittestid"=9570149208162739 AND "unittesting$testsuiteid"=7318349394477470
+INSERT INTO "unittesting$unittest_testsuite" VALUES(9570149208162739,7318349394477470)
+INSERT INTO "unittesting$unittest" VALUES(9570149208162740,FALSE,NULL,NULL,FALSE,'unittesting.UnittestingUnitTest1/testThatThrowsException',NULL,NULL,NULL)
+DELETE FROM "unittesting$unittest_testsuite" WHERE "unittesting$unittestid"=9570149208162740 AND "unittesting$testsuiteid"=7318349394477470
+INSERT INTO "unittesting$unittest_testsuite" VALUES(9570149208162740,7318349394477470)
+INSERT INTO "unittesting$unittest" VALUES(9570149208162741,FALSE,NULL,NULL,FALSE,'unittesting.UnittestingUnitTest2/evenMoreUnitTests',NULL,NULL,NULL)
+DELETE FROM "unittesting$unittest_testsuite" WHERE "unittesting$unittestid"=9570149208162741 AND "unittesting$testsuiteid"=7318349394477470
+INSERT INTO "unittesting$unittest_testsuite" VALUES(9570149208162741,7318349394477470)
+DELETE FROM "unittesting$testsuite" WHERE "id"=7318349394477470
+INSERT INTO "unittesting$testsuite" VALUES(7318349394477470,8,0,'Test_',0,TRUE,'UT_','UnitTesting',NULL,NULL)
+INSERT INTO "unittesting$unittest" VALUES(9570149208163113,TRUE,NULL,NULL,FALSE,'SampleModule.Test_CurrentUser',NULL,NULL,NULL)
+INSERT INTO "unittesting$unittest_testsuite" VALUES(9570149208163113,7318349394477994)
+INSERT INTO "unittesting$testsuite" VALUES(7318349394477994,1,0,'Test_',0,TRUE,'UT_','SampleModule',NULL,NULL)
+COMMIT
+/*C7*/INSERT INTO "system$backgroundjob" VALUES(8444249301320589,NULL,'2021-10-14 10:52:57.882000',FALSE,1634208749244,NULL)
+INSERT INTO "system$backgroundjob_session" VALUES(8444249301320589,11821949021848553)
+COMMIT
+/*C8*/INSERT INTO "system$session" VALUES(11821949021848562,NULL,'4477f005-da10-4a62-90b6-686301e6fe65','2021-10-14 10:52:57.907000','0e164224-a9c5-401b-b42d-dcf94f735b97','2021-10-14 10:52:57.907000',FALSE,'9095807e-1198-4644-be34-91ff78189ba6')
+INSERT INTO "system$session_user" VALUES(11821949021848562,5348024557502467)
+COMMIT
+/*C2*/DELETE FROM "system$session" WHERE "id"=11821949021848562
+DELETE FROM "system$session_user" WHERE "system$sessionid"=11821949021848562 AND "system$userid"=5348024557502467
+COMMIT
+/*C4*/DELETE FROM "unittesting$unittest" WHERE "id"=9570149208163113
+INSERT INTO "unittesting$unittest" VALUES(9570149208163113,TRUE,'251 milliseconds','Microflow completed successfully',FALSE,'SampleModule.Test_CurrentUser','_3_Success','Starting microflow test ''SampleModule.Test_CurrentUser''','2021-10-14 10:52:57.886000')
+COMMIT
+DELETE FROM "system$backgroundjob" WHERE "id"=8444249301320589
+INSERT INTO "system$backgroundjob" VALUES(8444249301320589,'2021-10-14 10:52:58.144000','2021-10-14 10:52:57.882000',FALSE,1634208749244,'{"body":{"changes":{},"commits":["9570149208163113"],"committedObjectsOmitted":false,"deletes":[],"instructions":[{"args":{"classnames":["UnitTesting.UnitTest"]},"target":"system","type":"refresh_class"},{"args":{"ObjectIds":["9570149208163113"]},"target":"system","type":"refresh_object_list"}],"newpersistable":[],"objects":[{"attributes":{"Name":{"value":"SampleModule.Test_CurrentUser","readonly":true},"UnitTesting.UnitTest_TestSuite":{"value":"7318349394477994","readonly":true},"LastStep":{"value":"Starting microflow test ''SampleModule.Test_CurrentUser''","readonly":true},"ReadableTime":{"value":"251 milliseconds","readonly":true},"LastRun":{"value":1634208777886,"readonly":true},"_dirty":{"value":false,"readonly":true},"Result":{"value":"_3_Success","readonly":true},"ResultMessage":{"value":"Microflow completed successfully","readonly":true},"IsMf":{"value":true,"readonly":true}},"guid":"9570149208163113","hash":"Zf3G1CTa5nEKjQFViTDtL5QM/jau+c5/5qOEsqHwHS0=","objectType":"UnitTesting.UnitTest"}],"resets":{}},"status":200}')
+COMMIT
+/*C2*/DELETE FROM "system$backgroundjob" WHERE "id"=8444249301320589
+DELETE FROM "system$backgroundjob_session" WHERE "system$backgroundjobid"=8444249301320589 AND "system$sessionid"=11821949021848553
+COMMIT
+/*C7*/DELETE FROM "unittesting$unittest" WHERE "id"=9570149208163113
+DELETE FROM "unittesting$unittest_testsuite" WHERE "unittesting$unittestid"=9570149208163113 AND "unittesting$testsuiteid"=7318349394477994
+DELETE FROM "unittesting$testsuite" WHERE "id"=7318349394477994
+DELETE FROM "unittesting$unittest" WHERE "id"=9570149208162734
+DELETE FROM "unittesting$unittest" WHERE "id"=9570149208162735
+DELETE FROM "unittesting$unittest" WHERE "id"=9570149208162736
+DELETE FROM "unittesting$unittest" WHERE "id"=9570149208162737
+DELETE FROM "unittesting$unittest" WHERE "id"=9570149208162738
+DELETE FROM "unittesting$unittest" WHERE "id"=9570149208162739
+DELETE FROM "unittesting$unittest" WHERE "id"=9570149208162740
+DELETE FROM "unittesting$unittest" WHERE "id"=9570149208162741
+INSERT INTO "unittesting$unittest" VALUES(9570149208162734,TRUE,NULL,NULL,FALSE,'UnitTesting.Test_FailingUnitTest',NULL,NULL,NULL)
+DELETE FROM "unittesting$unittest_testsuite" WHERE "unittesting$unittestid"=9570149208162734 AND "unittesting$testsuiteid"=7318349394477470
+INSERT INTO "unittesting$unittest_testsuite" VALUES(9570149208162734,7318349394477470)
+INSERT INTO "unittesting$unittest" VALUES(9570149208162735,TRUE,NULL,NULL,FALSE,'UnitTesting.Test_IsAssertionErrorCheck',NULL,NULL,NULL)
+DELETE FROM "unittesting$unittest_testsuite" WHERE "unittesting$unittestid"=9570149208162735 AND "unittesting$testsuiteid"=7318349394477470
+INSERT INTO "unittesting$unittest_testsuite" VALUES(9570149208162735,7318349394477470)
+INSERT INTO "unittesting$unittest" VALUES(9570149208162736,TRUE,NULL,NULL,FALSE,'UnitTesting.Test_ValidUnitTest',NULL,NULL,NULL)
+DELETE FROM "unittesting$unittest_testsuite" WHERE "unittesting$unittestid"=9570149208162736 AND "unittesting$testsuiteid"=7318349394477470
+INSERT INTO "unittesting$unittest_testsuite" VALUES(9570149208162736,7318349394477470)
+INSERT INTO "unittesting$unittest" VALUES(9570149208162737,TRUE,NULL,NULL,FALSE,'UnitTesting.Test_WithoutReturn',NULL,NULL,NULL)
+DELETE FROM "unittesting$unittest_testsuite" WHERE "unittesting$unittestid"=9570149208162737 AND "unittesting$testsuiteid"=7318349394477470
+INSERT INTO "unittesting$unittest_testsuite" VALUES(9570149208162737,7318349394477470)
+INSERT INTO "unittesting$unittest" VALUES(9570149208162738,TRUE,NULL,NULL,FALSE,'UnitTesting.UT_ValidUnitTest',NULL,NULL,NULL)
+DELETE FROM "unittesting$unittest_testsuite" WHERE "unittesting$unittestid"=9570149208162738 AND "unittesting$testsuiteid"=7318349394477470
+INSERT INTO "unittesting$unittest_testsuite" VALUES(9570149208162738,7318349394477470)
+INSERT INTO "unittesting$unittest" VALUES(9570149208162739,FALSE,NULL,NULL,FALSE,'unittesting.UnittestingUnitTest1/testOfOneSecondSetupAndOneSecundRun',NULL,NULL,NULL)
+DELETE FROM "unittesting$unittest_testsuite" WHERE "unittesting$unittestid"=9570149208162739 AND "unittesting$testsuiteid"=7318349394477470
+INSERT INTO "unittesting$unittest_testsuite" VALUES(9570149208162739,7318349394477470)
+INSERT INTO "unittesting$unittest" VALUES(9570149208162740,FALSE,NULL,NULL,FALSE,'unittesting.UnittestingUnitTest1/testThatThrowsException',NULL,NULL,NULL)
+DELETE FROM "unittesting$unittest_testsuite" WHERE "unittesting$unittestid"=9570149208162740 AND "unittesting$testsuiteid"=7318349394477470
+INSERT INTO "unittesting$unittest_testsuite" VALUES(9570149208162740,7318349394477470)
+INSERT INTO "unittesting$unittest" VALUES(9570149208162741,FALSE,NULL,NULL,FALSE,'unittesting.UnittestingUnitTest2/evenMoreUnitTests',NULL,NULL,NULL)
+DELETE FROM "unittesting$unittest_testsuite" WHERE "unittesting$unittestid"=9570149208162741 AND "unittesting$testsuiteid"=7318349394477470
+INSERT INTO "unittesting$unittest_testsuite" VALUES(9570149208162741,7318349394477470)
+DELETE FROM "unittesting$testsuite" WHERE "id"=7318349394477470
+INSERT INTO "unittesting$testsuite" VALUES(7318349394477470,8,0,'Test_',0,TRUE,'UT_','UnitTesting',NULL,NULL)
+INSERT INTO "unittesting$unittest" VALUES(9570149208163114,TRUE,NULL,NULL,FALSE,'SampleModule.Test_CurrentUser',NULL,NULL,NULL)
+INSERT INTO "unittesting$unittest_testsuite" VALUES(9570149208163114,7318349394477998)
+INSERT INTO "unittesting$testsuite" VALUES(7318349394477998,1,0,'Test_',0,TRUE,'UT_','SampleModule',NULL,NULL)
+COMMIT
+INSERT INTO "system$backgroundjob" VALUES(8444249301320590,NULL,'2021-10-14 10:53:00.227000',FALSE,1634208749245,NULL)
+INSERT INTO "system$backgroundjob_session" VALUES(8444249301320590,11821949021848553)
+COMMIT
+/*C4*/INSERT INTO "system$session" VALUES(11821949021848563,NULL,'cc8f523d-be8b-4e8a-a41f-6247fdd712bc','2021-10-14 10:53:00.247000','37e20ee1-176d-4b96-94b5-4060c193068c','2021-10-14 10:53:00.247000',FALSE,'fd46d41c-32ab-4991-b6d5-0bdec71804e1')
+INSERT INTO "system$session_user" VALUES(11821949021848563,5348024557502467)
+COMMIT
+DELETE FROM "system$session" WHERE "id"=11821949021848563
+DELETE FROM "system$session_user" WHERE "system$sessionid"=11821949021848563 AND "system$userid"=5348024557502467
+COMMIT
+/*C8*/DELETE FROM "unittesting$unittest" WHERE "id"=9570149208163114
+INSERT INTO "unittesting$unittest" VALUES(9570149208163114,TRUE,'246 milliseconds','Microflow completed successfully',FALSE,'SampleModule.Test_CurrentUser','_3_Success','Starting microflow test ''SampleModule.Test_CurrentUser''','2021-10-14 10:53:00.229000')
+COMMIT
+DELETE FROM "system$backgroundjob" WHERE "id"=8444249301320590
+INSERT INTO "system$backgroundjob" VALUES(8444249301320590,'2021-10-14 10:53:00.484000','2021-10-14 10:53:00.227000',FALSE,1634208749245,'{"body":{"changes":{},"commits":["9570149208163114"],"committedObjectsOmitted":false,"deletes":[],"instructions":[{"args":{"classnames":["UnitTesting.UnitTest"]},"target":"system","type":"refresh_class"},{"args":{"ObjectIds":["9570149208163114"]},"target":"system","type":"refresh_object_list"}],"newpersistable":[],"objects":[{"attributes":{"Name":{"value":"SampleModule.Test_CurrentUser","readonly":true},"UnitTesting.UnitTest_TestSuite":{"value":"7318349394477998","readonly":true},"LastStep":{"value":"Starting microflow test ''SampleModule.Test_CurrentUser''","readonly":true},"ReadableTime":{"value":"246 milliseconds","readonly":true},"LastRun":{"value":1634208780229,"readonly":true},"_dirty":{"value":false,"readonly":true},"Result":{"value":"_3_Success","readonly":true},"ResultMessage":{"value":"Microflow completed successfully","readonly":true},"IsMf":{"value":true,"readonly":true}},"guid":"9570149208163114","hash":"vbwXDnM817PorEMHfx0tPdDt8e4rfEH2PbUytwm84Lc=","objectType":"UnitTesting.UnitTest"}],"resets":{}},"status":200}')
+COMMIT
+/*C7*/DELETE FROM "system$backgroundjob" WHERE "id"=8444249301320590
+DELETE FROM "system$backgroundjob_session" WHERE "system$backgroundjobid"=8444249301320590 AND "system$sessionid"=11821949021848553
+COMMIT
+/*C8*/DELETE FROM "unittesting$unittest" WHERE "id"=9570149208163114
+DELETE FROM "unittesting$unittest_testsuite" WHERE "unittesting$unittestid"=9570149208163114 AND "unittesting$testsuiteid"=7318349394477998
+DELETE FROM "unittesting$testsuite" WHERE "id"=7318349394477998
+DELETE FROM "unittesting$unittest" WHERE "id"=9570149208162734
+DELETE FROM "unittesting$unittest" WHERE "id"=9570149208162735
+DELETE FROM "unittesting$unittest" WHERE "id"=9570149208162736
+DELETE FROM "unittesting$unittest" WHERE "id"=9570149208162737
+DELETE FROM "unittesting$unittest" WHERE "id"=9570149208162738
+DELETE FROM "unittesting$unittest" WHERE "id"=9570149208162739
+DELETE FROM "unittesting$unittest" WHERE "id"=9570149208162740
+DELETE FROM "unittesting$unittest" WHERE "id"=9570149208162741
+INSERT INTO "unittesting$unittest" VALUES(9570149208162734,TRUE,NULL,NULL,FALSE,'UnitTesting.Test_FailingUnitTest',NULL,NULL,NULL)
+DELETE FROM "unittesting$unittest_testsuite" WHERE "unittesting$unittestid"=9570149208162734 AND "unittesting$testsuiteid"=7318349394477470
+INSERT INTO "unittesting$unittest_testsuite" VALUES(9570149208162734,7318349394477470)
+INSERT INTO "unittesting$unittest" VALUES(9570149208162735,TRUE,NULL,NULL,FALSE,'UnitTesting.Test_IsAssertionErrorCheck',NULL,NULL,NULL)
+DELETE FROM "unittesting$unittest_testsuite" WHERE "unittesting$unittestid"=9570149208162735 AND "unittesting$testsuiteid"=7318349394477470
+INSERT INTO "unittesting$unittest_testsuite" VALUES(9570149208162735,7318349394477470)
+INSERT INTO "unittesting$unittest" VALUES(9570149208162736,TRUE,NULL,NULL,FALSE,'UnitTesting.Test_ValidUnitTest',NULL,NULL,NULL)
+DELETE FROM "unittesting$unittest_testsuite" WHERE "unittesting$unittestid"=9570149208162736 AND "unittesting$testsuiteid"=7318349394477470
+INSERT INTO "unittesting$unittest_testsuite" VALUES(9570149208162736,7318349394477470)
+INSERT INTO "unittesting$unittest" VALUES(9570149208162737,TRUE,NULL,NULL,FALSE,'UnitTesting.Test_WithoutReturn',NULL,NULL,NULL)
+DELETE FROM "unittesting$unittest_testsuite" WHERE "unittesting$unittestid"=9570149208162737 AND "unittesting$testsuiteid"=7318349394477470
+INSERT INTO "unittesting$unittest_testsuite" VALUES(9570149208162737,7318349394477470)
+INSERT INTO "unittesting$unittest" VALUES(9570149208162738,TRUE,NULL,NULL,FALSE,'UnitTesting.UT_ValidUnitTest',NULL,NULL,NULL)
+DELETE FROM "unittesting$unittest_testsuite" WHERE "unittesting$unittestid"=9570149208162738 AND "unittesting$testsuiteid"=7318349394477470
+INSERT INTO "unittesting$unittest_testsuite" VALUES(9570149208162738,7318349394477470)
+INSERT INTO "unittesting$unittest" VALUES(9570149208162739,FALSE,NULL,NULL,FALSE,'unittesting.UnittestingUnitTest1/testOfOneSecondSetupAndOneSecundRun',NULL,NULL,NULL)
+DELETE FROM "unittesting$unittest_testsuite" WHERE "unittesting$unittestid"=9570149208162739 AND "unittesting$testsuiteid"=7318349394477470
+INSERT INTO "unittesting$unittest_testsuite" VALUES(9570149208162739,7318349394477470)
+INSERT INTO "unittesting$unittest" VALUES(9570149208162740,FALSE,NULL,NULL,FALSE,'unittesting.UnittestingUnitTest1/testThatThrowsException',NULL,NULL,NULL)
+DELETE FROM "unittesting$unittest_testsuite" WHERE "unittesting$unittestid"=9570149208162740 AND "unittesting$testsuiteid"=7318349394477470
+INSERT INTO "unittesting$unittest_testsuite" VALUES(9570149208162740,7318349394477470)
+INSERT INTO "unittesting$unittest" VALUES(9570149208162741,FALSE,NULL,NULL,FALSE,'unittesting.UnittestingUnitTest2/evenMoreUnitTests',NULL,NULL,NULL)
+DELETE FROM "unittesting$unittest_testsuite" WHERE "unittesting$unittestid"=9570149208162741 AND "unittesting$testsuiteid"=7318349394477470
+INSERT INTO "unittesting$unittest_testsuite" VALUES(9570149208162741,7318349394477470)
+DELETE FROM "unittesting$testsuite" WHERE "id"=7318349394477470
+INSERT INTO "unittesting$testsuite" VALUES(7318349394477470,8,0,'Test_',0,TRUE,'UT_','UnitTesting',NULL,NULL)
+INSERT INTO "unittesting$unittest" VALUES(9570149208163115,TRUE,NULL,NULL,FALSE,'SampleModule.Test_CurrentUser',NULL,NULL,NULL)
+INSERT INTO "unittesting$unittest_testsuite" VALUES(9570149208163115,7318349394478002)
+INSERT INTO "unittesting$testsuite" VALUES(7318349394478002,1,0,'Test_',0,TRUE,'UT_','SampleModule',NULL,NULL)
+COMMIT
+/*C7*/INSERT INTO "system$backgroundjob" VALUES(8444249301320591,NULL,'2021-10-14 10:53:02.501000',FALSE,1634208749246,NULL)
+INSERT INTO "system$backgroundjob_session" VALUES(8444249301320591,11821949021848553)
+COMMIT
+/*C6*/INSERT INTO "system$session" VALUES(11821949021848564,NULL,'3569f4ba-aa95-4401-b2d8-6dfa3b1387de','2021-10-14 10:53:02.522000','640973d9-89c3-4143-8563-06983d9341c1','2021-10-14 10:53:02.523000',FALSE,'0d5161d2-c739-4b0f-b9ce-8fc64d1311bc')
+INSERT INTO "system$session_user" VALUES(11821949021848564,5348024557502467)
+COMMIT
+DELETE FROM "system$session" WHERE "id"=11821949021848564
+DELETE FROM "system$session_user" WHERE "system$sessionid"=11821949021848564 AND "system$userid"=5348024557502467
+COMMIT
+/*C7*/DELETE FROM "unittesting$unittest" WHERE "id"=9570149208163115
+INSERT INTO "unittesting$unittest" VALUES(9570149208163115,TRUE,'260 milliseconds','Microflow completed successfully',FALSE,'SampleModule.Test_CurrentUser','_3_Success','Starting microflow test ''SampleModule.Test_CurrentUser''','2021-10-14 10:53:02.506000')
+COMMIT
+DELETE FROM "system$backgroundjob" WHERE "id"=8444249301320591
+INSERT INTO "system$backgroundjob" VALUES(8444249301320591,'2021-10-14 10:53:02.777000','2021-10-14 10:53:02.501000',FALSE,1634208749246,'{"body":{"changes":{},"commits":["9570149208163115"],"committedObjectsOmitted":false,"deletes":[],"instructions":[{"args":{"classnames":["UnitTesting.UnitTest"]},"target":"system","type":"refresh_class"},{"args":{"ObjectIds":["9570149208163115"]},"target":"system","type":"refresh_object_list"}],"newpersistable":[],"objects":[{"attributes":{"Name":{"value":"SampleModule.Test_CurrentUser","readonly":true},"UnitTesting.UnitTest_TestSuite":{"value":"7318349394478002","readonly":true},"LastStep":{"value":"Starting microflow test ''SampleModule.Test_CurrentUser''","readonly":true},"ReadableTime":{"value":"260 milliseconds","readonly":true},"LastRun":{"value":1634208782506,"readonly":true},"_dirty":{"value":false,"readonly":true},"Result":{"value":"_3_Success","readonly":true},"ResultMessage":{"value":"Microflow completed successfully","readonly":true},"IsMf":{"value":true,"readonly":true}},"guid":"9570149208163115","hash":"J8oofHLjKIM/Ql8JmwGVrjxMqo/pafflsXCsR/dImA4=","objectType":"UnitTesting.UnitTest"}],"resets":{}},"status":200}')
+COMMIT
+/*C4*/DELETE FROM "system$backgroundjob" WHERE "id"=8444249301320591
+DELETE FROM "system$backgroundjob_session" WHERE "system$backgroundjobid"=8444249301320591 AND "system$sessionid"=11821949021848553
+COMMIT
+/*C6*/DELETE FROM "unittesting$unittest" WHERE "id"=9570149208163115
+DELETE FROM "unittesting$unittest_testsuite" WHERE "unittesting$unittestid"=9570149208163115 AND "unittesting$testsuiteid"=7318349394478002
+DELETE FROM "unittesting$testsuite" WHERE "id"=7318349394478002
+DELETE FROM "unittesting$unittest" WHERE "id"=9570149208162734
+DELETE FROM "unittesting$unittest" WHERE "id"=9570149208162735
+DELETE FROM "unittesting$unittest" WHERE "id"=9570149208162736
+DELETE FROM "unittesting$unittest" WHERE "id"=9570149208162737
+DELETE FROM "unittesting$unittest" WHERE "id"=9570149208162738
+DELETE FROM "unittesting$unittest" WHERE "id"=9570149208162739
+DELETE FROM "unittesting$unittest" WHERE "id"=9570149208162740
+DELETE FROM "unittesting$unittest" WHERE "id"=9570149208162741
+INSERT INTO "unittesting$unittest" VALUES(9570149208162734,TRUE,NULL,NULL,FALSE,'UnitTesting.Test_FailingUnitTest',NULL,NULL,NULL)
+DELETE FROM "unittesting$unittest_testsuite" WHERE "unittesting$unittestid"=9570149208162734 AND "unittesting$testsuiteid"=7318349394477470
+INSERT INTO "unittesting$unittest_testsuite" VALUES(9570149208162734,7318349394477470)
+INSERT INTO "unittesting$unittest" VALUES(9570149208162735,TRUE,NULL,NULL,FALSE,'UnitTesting.Test_IsAssertionErrorCheck',NULL,NULL,NULL)
+DELETE FROM "unittesting$unittest_testsuite" WHERE "unittesting$unittestid"=9570149208162735 AND "unittesting$testsuiteid"=7318349394477470
+INSERT INTO "unittesting$unittest_testsuite" VALUES(9570149208162735,7318349394477470)
+INSERT INTO "unittesting$unittest" VALUES(9570149208162736,TRUE,NULL,NULL,FALSE,'UnitTesting.Test_ValidUnitTest',NULL,NULL,NULL)
+DELETE FROM "unittesting$unittest_testsuite" WHERE "unittesting$unittestid"=9570149208162736 AND "unittesting$testsuiteid"=7318349394477470
+INSERT INTO "unittesting$unittest_testsuite" VALUES(9570149208162736,7318349394477470)
+INSERT INTO "unittesting$unittest" VALUES(9570149208162737,TRUE,NULL,NULL,FALSE,'UnitTesting.Test_WithoutReturn',NULL,NULL,NULL)
+DELETE FROM "unittesting$unittest_testsuite" WHERE "unittesting$unittestid"=9570149208162737 AND "unittesting$testsuiteid"=7318349394477470
+INSERT INTO "unittesting$unittest_testsuite" VALUES(9570149208162737,7318349394477470)
+INSERT INTO "unittesting$unittest" VALUES(9570149208162738,TRUE,NULL,NULL,FALSE,'UnitTesting.UT_ValidUnitTest',NULL,NULL,NULL)
+DELETE FROM "unittesting$unittest_testsuite" WHERE "unittesting$unittestid"=9570149208162738 AND "unittesting$testsuiteid"=7318349394477470
+INSERT INTO "unittesting$unittest_testsuite" VALUES(9570149208162738,7318349394477470)
+INSERT INTO "unittesting$unittest" VALUES(9570149208162739,FALSE,NULL,NULL,FALSE,'unittesting.UnittestingUnitTest1/testOfOneSecondSetupAndOneSecundRun',NULL,NULL,NULL)
+DELETE FROM "unittesting$unittest_testsuite" WHERE "unittesting$unittestid"=9570149208162739 AND "unittesting$testsuiteid"=7318349394477470
+INSERT INTO "unittesting$unittest_testsuite" VALUES(9570149208162739,7318349394477470)
+INSERT INTO "unittesting$unittest" VALUES(9570149208162740,FALSE,NULL,NULL,FALSE,'unittesting.UnittestingUnitTest1/testThatThrowsException',NULL,NULL,NULL)
+DELETE FROM "unittesting$unittest_testsuite" WHERE "unittesting$unittestid"=9570149208162740 AND "unittesting$testsuiteid"=7318349394477470
+INSERT INTO "unittesting$unittest_testsuite" VALUES(9570149208162740,7318349394477470)
+INSERT INTO "unittesting$unittest" VALUES(9570149208162741,FALSE,NULL,NULL,FALSE,'unittesting.UnittestingUnitTest2/evenMoreUnitTests',NULL,NULL,NULL)
+DELETE FROM "unittesting$unittest_testsuite" WHERE "unittesting$unittestid"=9570149208162741 AND "unittesting$testsuiteid"=7318349394477470
+INSERT INTO "unittesting$unittest_testsuite" VALUES(9570149208162741,7318349394477470)
+DELETE FROM "unittesting$testsuite" WHERE "id"=7318349394477470
+INSERT INTO "unittesting$testsuite" VALUES(7318349394477470,8,0,'Test_',0,TRUE,'UT_','UnitTesting',NULL,NULL)
+INSERT INTO "unittesting$unittest" VALUES(9570149208163116,TRUE,NULL,NULL,FALSE,'SampleModule.Test_CurrentUser',NULL,NULL,NULL)
+INSERT INTO "unittesting$unittest_testsuite" VALUES(9570149208163116,7318349394478006)
+INSERT INTO "unittesting$testsuite" VALUES(7318349394478006,1,0,'Test_',0,TRUE,'UT_','SampleModule',NULL,NULL)
+COMMIT
+/*C4*/INSERT INTO "system$backgroundjob" VALUES(8444249301320592,NULL,'2021-10-14 10:53:04.474000',FALSE,1634208749247,NULL)
+INSERT INTO "system$backgroundjob_session" VALUES(8444249301320592,11821949021848553)
+COMMIT
+/*C6*/INSERT INTO "system$session" VALUES(11821949021848565,NULL,'4da97b11-c931-45e1-ab8a-110cf00d8ada','2021-10-14 10:53:04.494000','654731fb-7542-42f7-8136-7d6a889d79bc','2021-10-14 10:53:04.494000',FALSE,'d68cf95c-e209-491a-8aca-739cc29f5961')
+INSERT INTO "system$session_user" VALUES(11821949021848565,5348024557502467)
+COMMIT
+DELETE FROM "system$session" WHERE "id"=11821949021848565
+DELETE FROM "system$session_user" WHERE "system$sessionid"=11821949021848565 AND "system$userid"=5348024557502467
+COMMIT
+/*C7*/DELETE FROM "unittesting$unittest" WHERE "id"=9570149208163116
+INSERT INTO "unittesting$unittest" VALUES(9570149208163116,TRUE,'266 milliseconds','Microflow completed successfully',FALSE,'SampleModule.Test_CurrentUser','_3_Success','Starting microflow test ''SampleModule.Test_CurrentUser''','2021-10-14 10:53:04.475000')
+COMMIT
+DELETE FROM "system$backgroundjob" WHERE "id"=8444249301320592
+INSERT INTO "system$backgroundjob" VALUES(8444249301320592,'2021-10-14 10:53:04.748000','2021-10-14 10:53:04.474000',FALSE,1634208749247,'{"body":{"changes":{},"commits":["9570149208163116"],"committedObjectsOmitted":false,"deletes":[],"instructions":[{"args":{"classnames":["UnitTesting.UnitTest"]},"target":"system","type":"refresh_class"},{"args":{"ObjectIds":["9570149208163116"]},"target":"system","type":"refresh_object_list"}],"newpersistable":[],"objects":[{"attributes":{"Name":{"value":"SampleModule.Test_CurrentUser","readonly":true},"UnitTesting.UnitTest_TestSuite":{"value":"7318349394478006","readonly":true},"LastStep":{"value":"Starting microflow test ''SampleModule.Test_CurrentUser''","readonly":true},"ReadableTime":{"value":"266 milliseconds","readonly":true},"LastRun":{"value":1634208784475,"readonly":true},"_dirty":{"value":false,"readonly":true},"Result":{"value":"_3_Success","readonly":true},"ResultMessage":{"value":"Microflow completed successfully","readonly":true},"IsMf":{"value":true,"readonly":true}},"guid":"9570149208163116","hash":"YgWtdM5CNLfCTnvAYaky1kAosF59/VfaccfS0YSKYY0=","objectType":"UnitTesting.UnitTest"}],"resets":{}},"status":200}')
+COMMIT
+DELETE FROM "system$backgroundjob" WHERE "id"=8444249301320592
+DELETE FROM "system$backgroundjob_session" WHERE "system$backgroundjobid"=8444249301320592 AND "system$sessionid"=11821949021848553
+COMMIT
+/*C6*/DELETE FROM "unittesting$unittest" WHERE "id"=9570149208163116
+DELETE FROM "unittesting$unittest_testsuite" WHERE "unittesting$unittestid"=9570149208163116 AND "unittesting$testsuiteid"=7318349394478006
+DELETE FROM "unittesting$testsuite" WHERE "id"=7318349394478006
+DELETE FROM "unittesting$unittest" WHERE "id"=9570149208162734
+DELETE FROM "unittesting$unittest" WHERE "id"=9570149208162735
+DELETE FROM "unittesting$unittest" WHERE "id"=9570149208162736
+DELETE FROM "unittesting$unittest" WHERE "id"=9570149208162737
+DELETE FROM "unittesting$unittest" WHERE "id"=9570149208162738
+DELETE FROM "unittesting$unittest" WHERE "id"=9570149208162739
+DELETE FROM "unittesting$unittest" WHERE "id"=9570149208162740
+DELETE FROM "unittesting$unittest" WHERE "id"=9570149208162741
+INSERT INTO "unittesting$unittest" VALUES(9570149208162734,TRUE,NULL,NULL,FALSE,'UnitTesting.Test_FailingUnitTest',NULL,NULL,NULL)
+DELETE FROM "unittesting$unittest_testsuite" WHERE "unittesting$unittestid"=9570149208162734 AND "unittesting$testsuiteid"=7318349394477470
+INSERT INTO "unittesting$unittest_testsuite" VALUES(9570149208162734,7318349394477470)
+INSERT INTO "unittesting$unittest" VALUES(9570149208162735,TRUE,NULL,NULL,FALSE,'UnitTesting.Test_IsAssertionErrorCheck',NULL,NULL,NULL)
+DELETE FROM "unittesting$unittest_testsuite" WHERE "unittesting$unittestid"=9570149208162735 AND "unittesting$testsuiteid"=7318349394477470
+INSERT INTO "unittesting$unittest_testsuite" VALUES(9570149208162735,7318349394477470)
+INSERT INTO "unittesting$unittest" VALUES(9570149208162736,TRUE,NULL,NULL,FALSE,'UnitTesting.Test_ValidUnitTest',NULL,NULL,NULL)
+DELETE FROM "unittesting$unittest_testsuite" WHERE "unittesting$unittestid"=9570149208162736 AND "unittesting$testsuiteid"=7318349394477470
+INSERT INTO "unittesting$unittest_testsuite" VALUES(9570149208162736,7318349394477470)
+INSERT INTO "unittesting$unittest" VALUES(9570149208162737,TRUE,NULL,NULL,FALSE,'UnitTesting.Test_WithoutReturn',NULL,NULL,NULL)
+DELETE FROM "unittesting$unittest_testsuite" WHERE "unittesting$unittestid"=9570149208162737 AND "unittesting$testsuiteid"=7318349394477470
+INSERT INTO "unittesting$unittest_testsuite" VALUES(9570149208162737,7318349394477470)
+INSERT INTO "unittesting$unittest" VALUES(9570149208162738,TRUE,NULL,NULL,FALSE,'UnitTesting.UT_ValidUnitTest',NULL,NULL,NULL)
+DELETE FROM "unittesting$unittest_testsuite" WHERE "unittesting$unittestid"=9570149208162738 AND "unittesting$testsuiteid"=7318349394477470
+INSERT INTO "unittesting$unittest_testsuite" VALUES(9570149208162738,7318349394477470)
+INSERT INTO "unittesting$unittest" VALUES(9570149208162739,FALSE,NULL,NULL,FALSE,'unittesting.UnittestingUnitTest1/testOfOneSecondSetupAndOneSecundRun',NULL,NULL,NULL)
+DELETE FROM "unittesting$unittest_testsuite" WHERE "unittesting$unittestid"=9570149208162739 AND "unittesting$testsuiteid"=7318349394477470
+INSERT INTO "unittesting$unittest_testsuite" VALUES(9570149208162739,7318349394477470)
+INSERT INTO "unittesting$unittest" VALUES(9570149208162740,FALSE,NULL,NULL,FALSE,'unittesting.UnittestingUnitTest1/testThatThrowsException',NULL,NULL,NULL)
+DELETE FROM "unittesting$unittest_testsuite" WHERE "unittesting$unittestid"=9570149208162740 AND "unittesting$testsuiteid"=7318349394477470
+INSERT INTO "unittesting$unittest_testsuite" VALUES(9570149208162740,7318349394477470)
+INSERT INTO "unittesting$unittest" VALUES(9570149208162741,FALSE,NULL,NULL,FALSE,'unittesting.UnittestingUnitTest2/evenMoreUnitTests',NULL,NULL,NULL)
+DELETE FROM "unittesting$unittest_testsuite" WHERE "unittesting$unittestid"=9570149208162741 AND "unittesting$testsuiteid"=7318349394477470
+INSERT INTO "unittesting$unittest_testsuite" VALUES(9570149208162741,7318349394477470)
+DELETE FROM "unittesting$testsuite" WHERE "id"=7318349394477470
+INSERT INTO "unittesting$testsuite" VALUES(7318349394477470,8,0,'Test_',0,TRUE,'UT_','UnitTesting',NULL,NULL)
+INSERT INTO "unittesting$unittest" VALUES(9570149208163117,TRUE,NULL,NULL,FALSE,'SampleModule.Test_CurrentUser',NULL,NULL,NULL)
+INSERT INTO "unittesting$unittest_testsuite" VALUES(9570149208163117,7318349394478010)
+INSERT INTO "unittesting$testsuite" VALUES(7318349394478010,1,0,'Test_',0,TRUE,'UT_','SampleModule',NULL,NULL)
+COMMIT
+/*C7*/INSERT INTO "system$backgroundjob" VALUES(8444249301320593,NULL,'2021-10-14 10:53:06.492000',FALSE,1634208749248,NULL)
+INSERT INTO "system$backgroundjob_session" VALUES(8444249301320593,11821949021848553)
+COMMIT
+/*C2*/INSERT INTO "system$session" VALUES(11821949021848566,NULL,'e7ca2d37-1076-46cc-aef2-1ce61f029040','2021-10-14 10:53:06.510000','a2eaa443-a717-446e-b678-ad3edee452de','2021-10-14 10:53:06.510000',FALSE,'0a915617-0741-41f0-be15-8dbe9728dad1')
+INSERT INTO "system$session_user" VALUES(11821949021848566,5348024557502467)
+COMMIT
+DELETE FROM "system$session" WHERE "id"=11821949021848566
+DELETE FROM "system$session_user" WHERE "system$sessionid"=11821949021848566 AND "system$userid"=5348024557502467
+COMMIT
+/*C6*/DELETE FROM "unittesting$unittest" WHERE "id"=9570149208163117
+INSERT INTO "unittesting$unittest" VALUES(9570149208163117,TRUE,'245 milliseconds','Microflow completed successfully',FALSE,'SampleModule.Test_CurrentUser','_3_Success','Starting microflow test ''SampleModule.Test_CurrentUser''','2021-10-14 10:53:06.493000')
+COMMIT
+DELETE FROM "system$backgroundjob" WHERE "id"=8444249301320593
+INSERT INTO "system$backgroundjob" VALUES(8444249301320593,'2021-10-14 10:53:06.743000','2021-10-14 10:53:06.492000',FALSE,1634208749248,'{"body":{"changes":{},"commits":["9570149208163117"],"committedObjectsOmitted":false,"deletes":[],"instructions":[{"args":{"classnames":["UnitTesting.UnitTest"]},"target":"system","type":"refresh_class"},{"args":{"ObjectIds":["9570149208163117"]},"target":"system","type":"refresh_object_list"}],"newpersistable":[],"objects":[{"attributes":{"Name":{"value":"SampleModule.Test_CurrentUser","readonly":true},"UnitTesting.UnitTest_TestSuite":{"value":"7318349394478010","readonly":true},"LastStep":{"value":"Starting microflow test ''SampleModule.Test_CurrentUser''","readonly":true},"ReadableTime":{"value":"245 milliseconds","readonly":true},"LastRun":{"value":1634208786493,"readonly":true},"_dirty":{"value":false,"readonly":true},"Result":{"value":"_3_Success","readonly":true},"ResultMessage":{"value":"Microflow completed successfully","readonly":true},"IsMf":{"value":true,"readonly":true}},"guid":"9570149208163117","hash":"7ERblmeTVe6L8bq/0ZaySaPfCmkJlOiiiIkNGF3RyE8=","objectType":"UnitTesting.UnitTest"}],"resets":{}},"status":200}')
+COMMIT
+DELETE FROM "system$backgroundjob" WHERE "id"=8444249301320593
+DELETE FROM "system$backgroundjob_session" WHERE "system$backgroundjobid"=8444249301320593 AND "system$sessionid"=11821949021848553
+COMMIT
+/*C7*/DELETE FROM "unittesting$unittest" WHERE "id"=9570149208163117
+DELETE FROM "unittesting$unittest_testsuite" WHERE "unittesting$unittestid"=9570149208163117 AND "unittesting$testsuiteid"=7318349394478010
+DELETE FROM "unittesting$testsuite" WHERE "id"=7318349394478010
+DELETE FROM "unittesting$unittest" WHERE "id"=9570149208162734
+DELETE FROM "unittesting$unittest" WHERE "id"=9570149208162735
+DELETE FROM "unittesting$unittest" WHERE "id"=9570149208162736
+DELETE FROM "unittesting$unittest" WHERE "id"=9570149208162737
+DELETE FROM "unittesting$unittest" WHERE "id"=9570149208162738
+DELETE FROM "unittesting$unittest" WHERE "id"=9570149208162739
+DELETE FROM "unittesting$unittest" WHERE "id"=9570149208162740
+DELETE FROM "unittesting$unittest" WHERE "id"=9570149208162741
+INSERT INTO "unittesting$unittest" VALUES(9570149208162734,TRUE,NULL,NULL,FALSE,'UnitTesting.Test_FailingUnitTest',NULL,NULL,NULL)
+DELETE FROM "unittesting$unittest_testsuite" WHERE "unittesting$unittestid"=9570149208162734 AND "unittesting$testsuiteid"=7318349394477470
+INSERT INTO "unittesting$unittest_testsuite" VALUES(9570149208162734,7318349394477470)
+INSERT INTO "unittesting$unittest" VALUES(9570149208162735,TRUE,NULL,NULL,FALSE,'UnitTesting.Test_IsAssertionErrorCheck',NULL,NULL,NULL)
+DELETE FROM "unittesting$unittest_testsuite" WHERE "unittesting$unittestid"=9570149208162735 AND "unittesting$testsuiteid"=7318349394477470
+INSERT INTO "unittesting$unittest_testsuite" VALUES(9570149208162735,7318349394477470)
+INSERT INTO "unittesting$unittest" VALUES(9570149208162736,TRUE,NULL,NULL,FALSE,'UnitTesting.Test_ValidUnitTest',NULL,NULL,NULL)
+DELETE FROM "unittesting$unittest_testsuite" WHERE "unittesting$unittestid"=9570149208162736 AND "unittesting$testsuiteid"=7318349394477470
+INSERT INTO "unittesting$unittest_testsuite" VALUES(9570149208162736,7318349394477470)
+INSERT INTO "unittesting$unittest" VALUES(9570149208162737,TRUE,NULL,NULL,FALSE,'UnitTesting.Test_WithoutReturn',NULL,NULL,NULL)
+DELETE FROM "unittesting$unittest_testsuite" WHERE "unittesting$unittestid"=9570149208162737 AND "unittesting$testsuiteid"=7318349394477470
+INSERT INTO "unittesting$unittest_testsuite" VALUES(9570149208162737,7318349394477470)
+INSERT INTO "unittesting$unittest" VALUES(9570149208162738,TRUE,NULL,NULL,FALSE,'UnitTesting.UT_ValidUnitTest',NULL,NULL,NULL)
+DELETE FROM "unittesting$unittest_testsuite" WHERE "unittesting$unittestid"=9570149208162738 AND "unittesting$testsuiteid"=7318349394477470
+INSERT INTO "unittesting$unittest_testsuite" VALUES(9570149208162738,7318349394477470)
+INSERT INTO "unittesting$unittest" VALUES(9570149208162739,FALSE,NULL,NULL,FALSE,'unittesting.UnittestingUnitTest1/testOfOneSecondSetupAndOneSecundRun',NULL,NULL,NULL)
+DELETE FROM "unittesting$unittest_testsuite" WHERE "unittesting$unittestid"=9570149208162739 AND "unittesting$testsuiteid"=7318349394477470
+INSERT INTO "unittesting$unittest_testsuite" VALUES(9570149208162739,7318349394477470)
+INSERT INTO "unittesting$unittest" VALUES(9570149208162740,FALSE,NULL,NULL,FALSE,'unittesting.UnittestingUnitTest1/testThatThrowsException',NULL,NULL,NULL)
+DELETE FROM "unittesting$unittest_testsuite" WHERE "unittesting$unittestid"=9570149208162740 AND "unittesting$testsuiteid"=7318349394477470
+INSERT INTO "unittesting$unittest_testsuite" VALUES(9570149208162740,7318349394477470)
+INSERT INTO "unittesting$unittest" VALUES(9570149208162741,FALSE,NULL,NULL,FALSE,'unittesting.UnittestingUnitTest2/evenMoreUnitTests',NULL,NULL,NULL)
+DELETE FROM "unittesting$unittest_testsuite" WHERE "unittesting$unittestid"=9570149208162741 AND "unittesting$testsuiteid"=7318349394477470
+INSERT INTO "unittesting$unittest_testsuite" VALUES(9570149208162741,7318349394477470)
+DELETE FROM "unittesting$testsuite" WHERE "id"=7318349394477470
+INSERT INTO "unittesting$testsuite" VALUES(7318349394477470,8,0,'Test_',0,TRUE,'UT_','UnitTesting',NULL,NULL)
+INSERT INTO "unittesting$unittest" VALUES(9570149208163118,TRUE,NULL,NULL,FALSE,'SampleModule.Test_CurrentUser',NULL,NULL,NULL)
+INSERT INTO "unittesting$unittest_testsuite" VALUES(9570149208163118,7318349394478014)
+INSERT INTO "unittesting$testsuite" VALUES(7318349394478014,1,0,'Test_',0,TRUE,'UT_','SampleModule',NULL,NULL)
+COMMIT
+DELETE FROM "system$session" WHERE "id"=11821949021848553
+INSERT INTO "system$session" VALUES(11821949021848553,NULL,'2a1a3e9c-991b-415e-b84a-a9ccb1b02b42','2021-10-14 10:52:29.011000','16aff34a-97b4-4520-b5c3-9d3e9b1531b6','2021-10-14 10:53:07.665000',FALSE,'e92b6fa2-24cc-41b2-92e9-8741c210449e')
+COMMIT
