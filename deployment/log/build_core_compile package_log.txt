@@ -1,14 +1,20 @@
 Buildfile: C:\Users\須原光秋\Documents\Mendix\UnitTestUseCurrentUser\deployment\build_core.xml
 
 compile:
-    [javac] Compiling 209 source files to C:\Users\須原光秋\Documents\Mendix\UnitTestUseCurrentUser\deployment\run\bin
-    [javac] 注意:一部の入力ファイルは推奨されないAPIを使用またはオーバーライドしています。
+    [javac] Compiling 1 source file to C:\Users\須原光秋\Documents\Mendix\UnitTestUseCurrentUser\deployment\run\bin
+    [javac] C:\Users\須原光秋\Documents\Mendix\UnitTestUseCurrentUser\javasource\system\UserActionsRegistrar.java:105: エラー: clonetWithReverseAssociationにアクセスできません
+    [javac]     registrator.registerUserAction(currentuserunittesting.actions.clonetWithReverseAssociation.class);
+    [javac]                                                                  ^
+    [javac]   クラス・ファイルC:\Users\須原光秋\Documents\Mendix\UnitTestUseCurrentUser\deployment\run\bin\currentuserunittesting\actions\clonetWithReverseAssociation.classは不正です
+    [javac]     クラス・ファイルのバージョン61.0は不正です。55.0である必要があります
+    [javac]     削除するか、クラスパスの正しいサブディレクトリにあるかを確認してください。
+    [javac] 注意:C:\Users\須原光秋\Documents\Mendix\UnitTestUseCurrentUser\javasource\system\UserActionsRegistrar.javaは推奨されないAPIを使用またはオーバーライドしています。
     [javac] 注意:詳細は、-Xlint:deprecationオプションを指定して再コンパイルしてください。
+    [javac] エラー1個
 
-package:
-      [jar] Building jar: C:\Users\須原光秋\Documents\Mendix\UnitTestUseCurrentUser\deployment\model\bundles\project.jar
+BUILD FAILED
+C:\Users\須原光秋\Documents\Mendix\UnitTestUseCurrentUser\deployment\build_core.xml:29: Compile failed; see the compiler error output for details.
 
-BUILD SUCCESSFUL
-Total time: 4 seconds
+Total time: 1 second
 
 

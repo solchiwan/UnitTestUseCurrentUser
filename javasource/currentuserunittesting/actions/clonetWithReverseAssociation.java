@@ -14,6 +14,7 @@ import java.util.Arrays;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+
 import com.mendix.core.Core;
 import com.mendix.core.CoreException;
 import com.mendix.core.objectmanagement.member.MendixAutoNumber;
@@ -65,20 +66,20 @@ public class clonetWithReverseAssociation extends CustomJavaAction<java.lang.Voi
 	{
 		IContext context = getContext();
 		Map<String, ? extends IMendixObjectMember<?>> members = source.getMembers(context);
-		List<String> reserveAssociations = Arrays.asList(reverseAssociation.split(","));
 		
 		for(String key : members.keySet()) { 
 			IMendixObjectMember<?> objectMember = members.get(key);
 			if (objectMember.isVirtual())	continue;
-			if (objectMember instanceof MendixAutoNumber) continue;
-			if ((!(objectMember instanceof MendixObjectReference) && !(objectMember instanceof MendixObjectReferenceSet)&& !(objectMember instanceof MendixAutoNumber))) {
-				target.setValue(context, key, objectMember.getValue(context));
-			}
+//			if (objectMember instanceof MendixAutoNumber) continue;
+			target.setValue(context, key, objectMember.getValue(context));
 		}
 		
 		Map<IMendixIdentifier, IMendixIdentifier> mappedObjects = new HashMap<IMendixIdentifier, IMendixIdentifier>();
 		mappedObjects.put(source.getId(), target.getId());
-		duplicateReverseAssociations(context, source, reserveAssociations, mappedObjects);
+		if (reverseAssociation != null && reverseAssociation != "") {
+			List<String> reserveAssociations = Arrays.asList(reverseAssociation.split(","));
+			duplicateReverseAssociations(context, source, reserveAssociations, mappedObjects);
+		}
 	}
 	
 	private void duplicateReverseAssociations(IContext context, IMendixObject sourceObject, List<String> reserveAssociations,

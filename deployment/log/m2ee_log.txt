@@ -1,8 +1,5 @@
 [rtlauncher:container$] INFO Evictions for component 'project-userlib':
 Evicted C:\Users\鬆亥次蜈臥ｧ欺Documents\Mendix\UnitTestUseCurrentUser\deployment\model\lib\userlib\commons-lang3-3.7.jar by C:\Users\鬆亥次蜈臥ｧ欺Documents\Mendix\UnitTestUseCurrentUser\deployment\model\lib\userlib\commons-lang3-3.11.jar.
-[rtlauncher:container$] INFO Container start took 3578. Ready to accept admin requests.
-Oct 14, 2021 7:56:25 PM org.hsqldb.persist.Logger logInfoEvent
+[rtlauncher:container$] INFO Container start took 3045. Ready to accept admin requests.
+Nov 04, 2021 11:30:00 PM org.hsqldb.persist.Logger logInfoEvent
 INFO: Database closed
-
-
-
