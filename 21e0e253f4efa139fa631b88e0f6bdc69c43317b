@@ -1,0 +1,1 @@
+{"BranchName":"master","ModelerVersion":"9.3.0.22930","ModelChanges":[{"Status":"Modified","UnitID":"cc488ac0-455d-4e38-add5-5ed4d07bea32","UnitType":"Microflows$Microflow","UnitName":"Task_CurrentUser","Module":"SampleModule"}],"RelatedStories":[],"isWebModelerCommit":false,"HasModelerVersion":true}
